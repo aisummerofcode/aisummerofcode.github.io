@@ -98,7 +98,8 @@
 
         $(".tf-text").removeClass("style")
         $(".tf-text").addClass("s1")
-        document.getElementById("logo_header").src = "assets/images/logo/logo_dark.png";
+        document.getElementById("logo_header").src = "assets/images/logo/aisoc-logo.png";
+        document.getElementById("logo_icon").src = "assets/images/logo/aisoc-icon.png";
         $('.mode_switcher h6 span').text('Dark Mode');
         document.getElementById("moon_dark").src = "assets/images/icon/moon.png";
     });
@@ -111,7 +112,8 @@
 
         $(".tf-text").addClass("style")
         $(".tf-text").removeClass("s1")
-        document.getElementById("logo_header").src = "assets/images/logo/logo.png";
+        document.getElementById("logo_header").src = "assets/images/logo/aisoc-logo-dark-2.png";
+        document.getElementById("logo_icon").src = "assets/images/logo/aisoc-icon-2.png";
         document.getElementById("moon_dark").src = "assets/images/icon/moon-2.png";
         $('.mode_switcher h6 span').text('Light Mode');
     });
@@ -158,18 +160,21 @@
         }
     };
 
-    var retinaLogos = function() {
-        var retina = window.devicePixelRatio > 1 ? true : false;
-          if(retina) {
-            if(!$('body').hasClass('is_dark')) {
-                $('#site-logo').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'151',height:'45'} );
-              }
-              else {
-                $('#site-logo').find('img').attr( {src:'assets/images/logo/logo_dark@2x.png',width:'151',height:'45'} );
-                $('#logo-footer').find('img').attr( {src:'assets/images/logo/logo_dark@2x.png',width:'151',height:'45'} );
-              }
-          }   
-      };
+    // var retinaLogos = function() {
+    //     var retina = window.devicePixelRatio > 1 ? true : false;
+    //       if(retina) {
+    //         if(!$('body').hasClass('is_dark')) {
+    //             // $('#site-logo').find('img').attr( {src:'assets/images/logo/aisoc-logo@2x.png',width:'151',height:'45'} );
+    //             $('#site-logo').find('img').attr( {src:'assets/images/logo/aisoc-icon-dark.png',width:'151',height:'45'} );
+    //           }
+    //           else {
+    //             // $('#site-logo').find('img').attr( {src:'assets/images/logo/aisoc-logo-dark@2x.png',width:'151',height:'45'} );
+    //             $('#site-logo').find('img').attr( {src:'assets/images/logo/aisoc-icon.png',width:'151',height:'45'} );
+    //             // $('#logo-footer').find('img').attr( {src:'assets/images/logo/aisoc-logo-dark@2x.png',width:'151',height:'45'} );
+    //             $('#logo-footer').find('img').attr( {src:'assets/images/logo/aisoc-icon.png',width:'151',height:'45'} );
+    //           }
+    //       }   
+    //   };
 
     // Mobile Navigation
     var mobileNav = function () {

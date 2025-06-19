@@ -58,38 +58,80 @@
         }, 800);
     };
 
+    // var dropdown = function(id){
+    //     var obj = $(id+'.dropdown');
+    //     var btn = obj.find('.btn-selector');
+    //     var dd = obj.find('ul');
+    //     var opt = dd.find('li');
+    //         dd.hide();
+    //         // $('body').on('click', function (e) {
+    //         //     var clickID = e.target.id;
+    //         //     if ((clickID !== "#target-dropdown" )) {
+    //         //         $(id).find('ul').removeClass('show');
+    //         //         e.stopPropagation();
+    //         //     }
+    //         // });
+    //         if ( !dd.hasClass('show') ) {
+    //             btn.on("click", function() {
+    //                 dd.show();
+    //                 dd.toggleClass('show');
+    //                 $(this).css("z-index",1000);
+    //             })
+    //             ;
+
+    //             opt.on("click", function() {
+    //                 dd.hide();
+    //                 var txt = $(this).text();
+    //                 opt.removeClass("active");
+    //                 $(this).addClass("active");
+    //                 btn.text(txt);
+    //                 dd.removeClass('show');
+    //             });
+    //         }
+    // };
+
+    // Modified original dropdown function here
     var dropdown = function(id){
+        // var obj = $(id);
         var obj = $(id+'.dropdown');
         var btn = obj.find('.btn-selector');
         var dd = obj.find('ul');
         var opt = dd.find('li');
-            dd.hide();
-            // $('body').on('click', function (e) {
-            //     var clickID = e.target.id;
-            //     if ((clickID !== "#target-dropdown" )) {
-            //         $(id).find('ul').removeClass('show');
-            //         e.stopPropagation();
-            //     }
-            // });
-            if ( !dd.hasClass('show') ) {
-                btn.on("click", function() {
-                    dd.show();
-                    dd.toggleClass('show');
-                    $(this).css("z-index",1000);
-                })
-                ;
+        dd.hide();
+        // if ( !dd.hasClass('show') ) {
+        //     btn.on("click", function(e) {
+        //         e.stopPropagation();
+        //         // Reset all dropdown z-index
+        //         $('.dropdown').css("z-index", 1);
+        //         // Close other dropdowns
+        //         $('.dropdown ul').not(dd).removeClass('show').hide();
+        //         // Bring this one to front
+        //         obj.css("z-index", 1000);
+        //         dd.toggle();
+        //         dd.toggleClass('show');
+        //         // $(this).css("z-index",1000);
+        //     })
+        //     ;
+        if (!dd.hasClass("show")) {
+            btn.on("click", function () {
+                // Close other dropdowns
+                $(".dropdown ul").not(dd).removeClass("show").hide();
+                dd.toggle();
+                dd.toggleClass("show");
+                $(this).css("z-index", 1000);
+            });
 
-                opt.on("click", function() {
-                    dd.hide();
-                    var txt = $(this).text();
-                    opt.removeClass("active");
-                    $(this).addClass("active");
-                    btn.text(txt);
-                    dd.removeClass('show');
-                });
-            }
+            opt.on("click", function () {
+                dd.hide();
+                var txt = $(this).text();
+                opt.removeClass("active");
+                $(this).addClass("active");
+                btn.text(txt);
+                dd.removeClass("show");
+            });
+        }
     };
-
+    
     var no_link = function(){
         $('a.nolink').on('click', function(e){
           e.preventDefault();
@@ -151,6 +193,11 @@
         dropdown('#buy');
         dropdown('#sort-by');
         dropdown('#ethereum');
+        dropdown('#ethereum-2');
+        dropdown('#ethereum-3');
+        dropdown('#ethereum-4');
+        dropdown('#ethereum-5');
+        dropdown('#ethereum-6');
         dropdown('#english');
         dropdown('#date-select');
         flcustominput();
