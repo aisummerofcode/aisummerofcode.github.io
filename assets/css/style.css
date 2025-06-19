@@ -812,7 +812,7 @@ h6 a {
 }
 
 .tf-section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 
@@ -1026,7 +1026,7 @@ a:focus {
     /* color */
     --bg-body: #fff;
     --bg-topbar : #F9F9F9;
-    --bg-header : #fff;
+    --bg-header : #efedff;
     --bg-slider: linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%);
     --bg-slider-2: #14141F;
     --bg-footer: #14161B;
@@ -1082,11 +1082,13 @@ a:focus {
 /* menu options */
 .dropdown {
     width: 100%;
+    position: relative;
 }
 
 .dropdown ul {
     z-index: 999;
-    position: absolute;
+    position: relative;
+    top: 100%; /* places below the button */
     cursor: pointer;
     width: 100%;
     height: auto;
@@ -1243,7 +1245,8 @@ a:focus {
     text-align: center;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
+    box-shadow: 2px 2px 7px 1px rgba(99, 69, 237, 0.45);
+    /* box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%); */
     border-radius: 7px;
     color: #000;
     margin-right: 9px;
@@ -1355,12 +1358,26 @@ a:focus {
 .header_1 #site-header-inner {
     align-items: center;
     justify-content: center;
-    padding: 19px 0;
+    padding: 15px 0;
 }
 
 /* logo  */
 .header_1 #site-logo {
     margin-right: 3.5%;
+}
+
+.header_1 .main-logo #logo_header {
+    width: 151px;
+    height: 45px;
+    object-fit: contain;
+    display: inline;
+}
+
+.header_1 .main-logo #logo_icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: none;
 }
 
 /* form search */
@@ -1743,7 +1760,7 @@ a:focus {
 .mobile-button {
     display           : none;
     position          : absolute;
-    width             : 26px;
+    width             : 20px;
     height            : 26px;
     float             : right;
     top               : 50%;

@@ -147,7 +147,7 @@
 } 
 
 .tf-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background: var(--bg-section);
     margin-bottom: 0 !important;
     -webkit-transition: all 0.3s ease-in-out;
@@ -3128,12 +3128,13 @@ flex-shrink: 0;
     background: var(--color-4);
 box-shadow: 4px 4px 60px rgba(99, 69, 237, 0.15);
 border-radius: 8px;
-padding: 17px 15px 20px 25px;
+/* padding: 17px 15px 20px 25px; */
+padding: 25px;
 display: flex;
 justify-content: space-between;
 align-items: end;
 font-size: 13px;
-margin-right: 17px;
+/* margin-right: 17px; */
 margin-bottom: 31px;
 }
 .item-details-page .infor-bid h6 {
