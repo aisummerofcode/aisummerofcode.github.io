@@ -815,6 +815,20 @@ h6 a {
     padding: 50px 0;
 }
 
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 logos per row */
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-grid img {
+    max-width: 100%;
+    max-height: 60px; /* or whatever fits best */
+    object-fit: contain;
+}
 
 .tf-live-auctions.tf-section {
     padding: 103px 0;
