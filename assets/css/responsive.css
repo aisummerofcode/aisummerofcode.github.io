@@ -489,21 +489,6 @@
         margin-right: 10px;
     }
 
-    .countdown.style-2a .countdown__item {
-        width: auto;
-        height: auto;
-        padding: 7px 14px 11px 14px;
-        margin-right: 7px;
-    }
-
-    .countdown.style-2a .countdown__item .countdown__value {
-        font-size: 18px;
-    }
-
-    .countdown.style-2a .countdown__item .countdown__label {
-        font-size: 9px;
-    }
-
     .item-details-page .item-media {
         padding-top: 110px;
     }
@@ -596,6 +581,21 @@
     .infor-bid .content-left {
         max-width: 120px;
     }
+
+    .countdown.style-2a .countdown__item {
+        width: auto;
+        height: auto;
+        padding: 7px 13px 10px 13px;
+        margin-right: 7px;
+    }
+
+    .countdown.style-2a .countdown__item .countdown__value {
+        font-size: 18px;
+    }
+
+    .countdown.style-2a .countdown__item .countdown__label {
+        font-size: 9px;
+    }   
 
     .slider-inner.style-2 .slider-content .button-slider .sc-button.btn-bordered-white,
     .slider-inner .slider-content .button-slider .sc-button.btn-bordered-white {
