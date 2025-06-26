@@ -562,10 +562,14 @@
         margin-right: 30px;
     }
     .mode_switcher a {
-        width: 35px;
-        height: 35px;
-        min-width: 35px;
-        margin-left: 10px;
+        width: 33px;
+        height: 33px;
+        min-width: 33px;
+        margin-left: 5px;
+    }
+    .mode_switcher img {
+        width: 18px;
+        height: 18px;
     }
 
     .sc-product-item.style-7 {
