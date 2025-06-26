@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>AI Summer of Code | Incubating AI Talents</title>
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="shortcut icon" href="assets/images/logo/aisoc-icon-2.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/aisoc-icon-2.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <!-- <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '364873392161277');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=364873392161277&ev=PageView&noscript=1"
+    /></noscript> -->
+    <!-- End Meta Pixel Code --> 
+
+</head>
+
+<body class="body header-fixed is_dark">
+
+<!-- <div class="preload preload-container">
+<div class="preload-logo"></div>
+</div> -->
+
+<header id="header_main" class="header_1 js-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-button"><span></span></div>
+                <div id="site-header-inner" class="flex">
+                    <div id="site-logo" class="clearfix">
+                        <div id="site-logo-inner">
+                            <a href="index.html" rel="home" class="main-logo">
+                                <img id="logo_header" src="assets/images/logo/aisoc-logo.png" alt="aisoc-logo"
+                                    data-retina="assets/images/logo/logo_dark@2x.png">
+                                <img id="logo_icon" src="assets/images/logo/aisoc-icon.png" alt="aisoc-logo"
+                                    data-retina-mobile-src="assets/images/logo/icon@2x.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="site-menu" style="margin-right:auto">
+                        <nav id="main-nav" class="main-nav">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item menu-item-has-children  current-item">
+                                    <a href="#">Editions</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank">Season 1</a></li>
+                                        <li class="menu-item"><a href="#">Season 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Events</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">AI Open</a></li>
+                                        <li class="menu-item"><a href="#">AI Synopsis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children ">
+                                    <a href="#">Community</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Membership</a></li>
+                                        <li class="menu-item "><a href="#">Blog</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="mailto:hello@aisummerofcode.org">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- <form class="form-search">
+                        <input type="text" placeholder="Search here">
+                        <button><i class="far fa-search"></i></button>
+                    </form> -->
+
+                    <!-- <div class="button-connect-wallet" style="margin-right: 0px;">
+                        <a href="connect-wallet.html" class="sc-button wallet style-2">
+                            <img src="assets/images/icon/connect-wallet.svg" alt="icon">
+                            <span>Register Now</span>
+                        </a>
+                    </div> -->
+
+                    <div class="countdown style-2a"
+                        style="background: transparent; text-align: center; margin-left: 0px; margin-right: 0px; padding: 0px">
+                        <a href="#" data-toggle="modal" data-target="#popup_apply_now" class="js-countdown" data-countdown="2025-07-25T23:59:59"
+                            data-labels=" Days , Hours , Mins , Secs" style="font-size: 20px"></a>
+                    </div>
+
+                    <div class="mode_switcher">
+                        <h6><span>Dark Mode</span> <strong>Activate</strong></h6>
+                        <a href="#" class="light d-flex align-items-center" style="margin-left: 3px;">
+                            <img src="assets/images/icon/sun.png" alt="">
+                        </a>
+                        <a href="#" class="dark d-flex align-items-center is_active">
+                            <img id="moon_dark" src="assets/images/icon/moon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="fl-page-title">
+    <div class="overlay"></div>
+        <div class="container" style="padding:0px 12px">
+
+            <div class="best-seller-inner" style="background: var(--bg-header); padding: 50px 15px">
+                <div class="page-title-heading col-lg-9 text-center" style="margin: auto">
+                    <h3 class="mt-4" style="font-size:45px">The world's largest classroom for incubating AI talents</h3>
+                </div>
+                <div class="slider-inner flex home-1 mt-5" style="padding: 15px">
+                    <div class="row">
+                        <div class="slider-content text-center" style="padding-top: 15px;">
+                            <p class="sub-heading" style="color: var(--color-1); padding: 0px 5%">AI Summer of Code (AISOC) is the annual convergence of global experts in AI with enthusiastic learners from all over the world seeking to upskill and excel in the science and engineering of AI systems. </p>
+                            <h3 class="sub-heading text-center" style="color: var(--color-1); font-size: 22px; padding: 0px;"><b>Get ready for AISOC Season 2</b><p class="text-center" style="font-size: 18px;">July 26 - November 22, 2025</p></h3>
+
+                            <div class="countdown style-2b" style="margin: auto;text-align: center;">
+                                <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hours , Mins , Secs"></span>
+                                <div class="button-slider">
+                                    <a href="#" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter mt-4" style="padding: 16px; margin: auto"><span style="font-size:15px">Register</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-img col-xl-6 col-lg-12 col-md-12" style="margin: auto">
+                            <div class="img-home-1" style="margin: auto"><img src="assets/images/post/teamTrainingHero.png" alt="Image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section item-details-page">
+    <div class="container">
+        <!-- <div class="sc-heading col-lg-10" style="margin: auto"></div> -->
+        <div class="row">
+            <!-- <div class="col-xl-6 col-lg-12 col-md-12 mt-3"> -->
+            <div class="col-xl-6 col-lg-10" style="margin: auto">
+                <div class="content-item mt-5" style="padding-left: 0%; padding-right: 20px;">
+                    <h3 class="mg-bt-42" style="font-size:45px; line-height: 1.2; margin-bottom: 20px;"> About AISOC</h3>
+                    <p>AISOC was launched in 2024 to fill the growing gap in AI education and democratize access to world-class AI skills. With the rise and prominence of large language models and generative AI, and how these technologies are reshaping the world of software, it is now more important than ever to raise talents that are equipped to build the next generation of AI systems and GenAI-powered applications. <b style="color: var(--color-1);">And we are taking on this mission!</b></p>
+                    <p>Through intense, hands-on technical training in the foundations, engineering and applications of large language models and modern AI systems, AISOC stars develop rigorous understanding and mastery of the technical skills needed to build next-gen intelligent applications and push the boundaries of the AI landscape.</p>
+                    <a href="#" target="_blank" class="sc-button" style="background: #6345ED; padding: 17px 38px; margin: auto;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;; padding-left: 7px">Learn more</span></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12" style="margin: auto">
+                <div class="item-media" style="padding-top: 0px">
+                    <div class="media mg-bt-0">
+                        <img src="assets/images/post/teamTrainingHero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section item-details-page"> -->
+<section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="popup">
+                    <div class="modal-content" style="text-align: left; line-height: 1.3;">
+                        <div class="modal-body space-y-20 pd-40">
+                            <div class="content-item">
+                                <h3 class="mg-bt-42" style="text-align: left; font-size:40px">Season 1 Highlights</h3>
+                            </div>
+                            <ul>
+                                <p><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> Over 200 registered participants from more than 10 countries</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> Representation from a wide range of industries, professional backgrounds and experience levels in tech (Beginner to Senior+)</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> A global expert lineup of a dozen senior professionals and leaders in data science and AI across the globe</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> 40+ live classroom sessions, including technical deep-dives, hands-on tutorials, workshops, expert talks, spanning 100+ hours!</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> Hands-on capstone project after 4 weeks of intense learning!</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                            </ul>
+                            <div class="button-slider mt-5 mg-bt-42" style="max-width: 330px; padding-bottom: 10px;">
+                                <a href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank" class="sc-button widget-social style" style="background: linear-gradient(132.71deg, #6345ED 18.12%, #DC39FC 81.74%); padding: 17px 25px;"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; font-size: 16px; color: #fff">See More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-10" style="margin: auto">
+                <div class="content-item text-center" style="padding: 20px;">
+                    <h3 style="font-size:40px; line-height: 1.3; margin-bottom: 20px;">Season 2 promises even better</h3>
+                    <p style="font-size: 17px;">AISOC 2.0 features 4 dedicated learning pathways, a global expert faculty, deep dives into the latest advances in LLMs and generative AI engineering, and real-world AI projects to help you hone your skills.<br></p>
+                    <h4 style="padding: 20px; line-height: 1.3;">An unforgettable classroom experience across 4 months!</h4>
+
+                    <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                    <p class="desc mt-5" style="margin-bottom: 0px;"><b style="color: var(--color-1); font-family: Jost; font-size: 30px">7 WEEKS</b><br><span style="font-size: 15px"> Hands-on Learning </span></p>
+                    <p class="desc" style="color: var(--color-1); margin-bottom: 5px;"><span style="font-size: 20px"> + </span></p>
+                    <p class="desc" style="margin-bottom: 30px;"><b style="color: var(--color-1);font-family: Jost; font-size: 30px">2 MONTHS</b><br><span style="font-size: 15px">Post-Learning & Dedicated Project Support</span></p>
+                    <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                    
+                    <h5 style="color: var(--color-1)"><b>AISOC 2.0 begins in</b></h5>
+                    <div class="countdown style-2 mt-3 text-center" style="margin: auto;">
+                        <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section item-details-page" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div>
+            <h3 class="text-center" style="font-size:40px; line-height: 1.2; margin-bottom: 40px;">Choose from 4 comprehensive pathways</p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK I: MACHINE LEARNING</h5><br>
+                        <div class="price">LEVEL - BEGINNER</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Learn the "craftsmanship" of machine learning, including principles and practical techniques of 
+                            preparing data for machine learning, designing training experiments, building well-calibrated models, and choosing the right metrics for model evaluation. 
+                            Master the underlying algorithms for a wide range of ML tasks, from supervised to unsupervised learning.
+                        </p><br><br>
+                        <a href="#" data-toggle="modal" data-target="#track_1" class="sc-button"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK II: APPLIED AI</h5><br>
+                        <div class="price">LEVEL - BEGINNER</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Learn how to build LLM chatbots, RAG-powered applications, and agentic systems for real-world use cases. 
+                            Build APIs that interact with frontier LLMs, embedding models and external tools to provide retrieval, reasoning and conversational capabilities.
+                        </p><br><br>
+                        <a href="#" data-toggle="modal" data-target="#track_2" class="sc-button"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK III: FOUNDATION AI</h5><br>
+                        <div class="price">LEVEL - INTERMEDIATE</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Dive into the inner workings of foundation models, including LLMs and reasoning models, from underlying math and architectures to training and finetuning techniques to deployment. 
+                            You will pretrain and finetune large models on GPUs, serve them on compute infra, and optimize them using distributed inference and autoscaling techniques.
+                        </p><br><br>
+                        <a href="#" data-toggle="modal" data-target="#track_3" class="sc-button"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK IV: PRODUCTION AI</h5><br>
+                        <div class="price">LEVEL - INTERMEDIATE</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Learn how to take AI models, RAG applications and agentic systems into production. 
+                            You will master the engineering best practices for designing, implementing and deploying scalable AI systems through hands-on tutorials, workshops and projects.
+                        </p><br><br>
+                        <a href="#" data-toggle="modal" data-target="#track_4" class="sc-button"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- <div class="col-xl-6 col-lg-10" style="margin: auto"> -->
+            <div class="desc col-xl-6 col-lg-12 col-md-12" style="text-align: left">
+                <h3 class="mt-5 text-center" style="font-size: 38px; line-height: 1.2; margin-bottom: 30px;"> Prerequisites</h3>
+
+                <div id="dropdown-item-1" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>MACHINE LEARNING</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Working knowledge of a programming language such as Python, either in the context of data science/analytics or software development. 
+                            Prior experience in numerical and exploratory data analysis using tools like Numpy, Pandas, SQL and Matplotlib is a plus. No prior experience in scikit-learn or other machine learning frameworks is expected.
+                            <!-- Familiarity with APIs, cloud, and web frameworks is a plus, but not strictly required. -->
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-2" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>APPLIED AI</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Working knowledge of a programming language such as Python, either in the context of data science/analytics or software development. 
+                            Familiarity with APIs, cloud, and web frameworks is a plus, but not strictly required.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-3" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>FOUNDATION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Working knowledge of Python or similar languages in the context of machine learning or software development. 
+                            At least basic familiarity with prompt engineering and LLM APIs such as OpenAI API for prototyping. 
+                            Familiarity with GPUs, CUDA, HuggingFace, deep learning frameworks such as PyTorch, or prior experience in traditional ML is a plus but not mandatory.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-4" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>PRODUCTION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Working knowledge of Python or similar programming languages in the context of software development. 
+                            At least basic familiarity with prompt engineering and LLM APIs such as OpenAI API for prototyping. 
+                            Prior experience with shell scripting, Docker and cloud platforms such as GCP or AWS is a plus. 
+                            Familiarity with GPUs, CUDA and HuggingFace is also welcome but not strictly required
+                        </p><br>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="desc col-xl-6 col-lg-12 col-md-12" style="text-align: left">
+                <h3 class ="mt-5 text-center" style="font-size: 38px; line-height: 1.2; margin-bottom: 30px;"> Who should attend?</h3>
+
+                <div id="dropdown-item-5" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>MACHINE LEARNING</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Data analysts/scientists, researchers, developers, or beginners seeking to 
+                            understand what it takes to build high-performing machine learning models and implement systems that generalize well in the reeal world. 
+                            ML engineers interested in deepening their knowledge in the vast fundamentals are also welcome to apply.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-6" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>APPLIED AI</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Beginners to LLMs and generative AI systems who want to gain mastery in the development of LLM-powered applications, chatbots, RAG pipelines and agentic systems. 
+                            Target audience includes, but is not limited to, data professionals, software developers, researchers, ML engineers, technical product managers, etc, at any levels.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-7" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>FOUNDATION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <!-- <p style="font-size: 15px; line-height: 1.5;">Anyone with at least fundamental knowledge building machine learning models or prototyping simple LLM-based applications such as RAG, QA systems and agents, seeking to advance their skills in the training and optimization of large language models for deployment into real-world applications. Mathematically inclined folks with computational experience using Python, MATLAB or similar programming languages but no prior experience working with ML or LLMs are also welcome to participate in this track. -->
+                            <p style="font-size: 15px; line-height: 1.5;">Researchers, graduate students or engineers seeking to understand the underlying principles of building large foundation models. 
+                                Suitable for folks with at least foundational knowledge building machine learning models or prototyping simple LLM-based applications such as RAG, QA systems and agents. 
+                                Mathematically inclined folks with computational experience in Python or similar languages but no prior experience in ML or LLMs are also welcome to apply for this track.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-8" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>PRODUCTION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 15px; line-height: 1.5;">Data professionals, ML/AI engineers and developers seeking to build production-grade AI systems or integrate LLMs into software applications or production data/ML pipelines. 
+                            Prior experience building and deploying traditional software, data pipelines or traditional ML systems is a plus.
+                            Familiarity prototyping LLM applications, working with OSS models or LLM APIs, or training/finetuning LLMs is a bonus.
+                        </p><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="countdown style-2 mt-5 text-center" style="margin: auto;">
+            <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+        </div>
+        <div class="button-slider text-center mt-3" style="max-width: 330px; margin:auto">
+            <a href="#" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter" style="background: var(--primary-color5); padding: 20px 45px;"><span style= "color: var(--color-4); font-size: 17px">Sign up now</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-best-seller"> -->
+<section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="best-seller-inner">
+
+        <div class="row">
+            <div class="col-md-12">                
+                <div class="content-item mt-5 col-lg-12 content-left">
+                    <h3 class="desc" style="color: var(--color-1)">Learn from a global expert lineup</h3><br>
+                    <p>See the faculty lineup from Season 1. Season 2 faculty to be announced shortly.</p>
+                </div>
+                <div class="swiper-container latest-coll style-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/richmond-alake.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style" style="background: transparent; width: 1%;  height: 1%;"><i class="fab fa-linkedin-in" style="color: #fff; background: #6345ED; font-size: 16px; padding: 4px; border-radius: 5px;"></i></a> -->
+                                        <!-- <label href="https://zion.com" style="cursor: pointer; background: transparent; width: 100%; right: 0; text-align: center;"><i class="fab fa-linkedin-in" style="color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px; text-align: center;"></i></label> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Richmond Alake</a> </h6>
+                                        <div class="details">Staff Developer Advocate<br>MongoDB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/li-yin.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a> -->
+                                        <!-- <label>WORKSHOP</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Li Yin</a> </h6>
+                                        <div class="details">Founder/AdalFlow Creator<br>SylphAI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/ayo-oluleye.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>EXPERT TALK</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Ayodele Oluleye</a> </h6>
+                                        <div class="details">Head, Data and Insights<br>ARM HoldCo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/hapreet.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>WORKSHOP</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Harpreet Sahota</a> </h6>
+                                        <div class="details">AI Engineer & DevRel<br>Voxel51</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/quadri-oshoare.jpg" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>TUTORIALS</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Abdulquadri Oshoare</a> </h6>
+                                        <div class="details">Senior Data Engineer<br>Credit Direct</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/ridwan-amure.jpg" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>LECTURES</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Ridwan Amure</a> </h6>
+                                        <div class="details">ML Researcher<br>UALR</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/david-okpare.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>WORKSHOP</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>David Okpare</a> </h6>
+                                        <div class="details">AI Software Engineer<br>Siennai Analytics</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/temitayo.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>TUTORIALS</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Temitayo Adejuyigbe</a> </h6>
+                                        <div class="details">Senior ML Engineer<br>Periculum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/jeffrey.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>WORKSHOP</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Jeffrey Otoibhi</a> </h6>
+                                        <div class="details">Lead Researcher<br>SabiYarn</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/sam-ayo.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>TUTORIALS</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Samuel Ayo</a> </h6>
+                                        <div class="details">Lead AI Engineer<br>Clive AI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/zion.png" alt="Image">
+                                        <!-- <a href="#" class="sc-button style"><i class="fab fa-linkedin"></i></a>
+                                        <label>TUTORIALS</label> -->
+                                        <!-- <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px;"></i></a> -->
+                                        <a href="#"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Zion Pibowei</a> </h6>
+                                        <div class="details">Head, Data Science and AI<br>Periculum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-details-page container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-10 mt-5" style="margin: auto">
+                <div class="content-item mt-5" style="padding-left: 0%; padding-right: 20px;">
+                    <h3 class="mg-bt-42" style="font-size:36px; line-height: 1.2; margin-bottom: 20px;"> Mastery through hands-on projects</h3>
+                    <p>Get your hands dirty in a real-world project using real-world infrastructure to apply the skills you have learned. You will get to build a practical use case addresing a real-world problem relevant to a specific niche or industry. Your solution will be end-to-end, deployed for end users to interact with based on your chosen use case.</b></p>
+                    <!-- <a href="#" target="_blank" class="sc-button" style="background: #6345ED; padding: 17px 38px; margin: auto;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;; padding-left: 7px">Learn more</span></a> -->
+                    <a href="https://github.com/aisummerofcode/aisoc-season-1/blob/main/projects.md" target="_blank" class="sc-button widget-social style" style="background: linear-gradient(132.71deg, #6345ED 18.12%, #DC39FC 81.74%); padding: 17px 25px;"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; font-size: 16px; color: #fff">See Example</span></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 mt-5">
+                <div class="content-item mt-5" style="padding-left: 0%; padding-right: 20px;">
+                    <h3 class="mg-bt-42" style="font-size:36px; line-height: 1.2; margin-bottom: 20px;">Demo Day - your chance to shine!</h3>
+                    <p>Get a chance to demo your project at the closing physical ceremony in front of a large audience including business executives, hiring managers and recruiters. This is an opportunity to showcase your technical mastery and attract new opportunities for your career.</b></p>
+                    <a href="#" target="_blank" class="sc-button" style="background: #6345ED; padding: 17px 38px; margin: auto;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;; padding-left: 7px">Learn more</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)"> -->
+<section class="tf-section item-details-page" style="background: var(--bg-body-2)">
+    <div class="container">
+
+        <div>
+            <h3 style="font-size:38px; line-height: 1.2; margin-bottom: 30px; text-align: center;">Enjoy flexible enrolment plans</p>
+        </div>
+        <div class="row"> 
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>Free Attendance</h5><br>
+                        <div class="price">FEE - $0</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Attend AISOC free of charge. Limited access to session recordings + full access to the program codebase covering tutorials, workshops and problems treated across the 7-week learning period. There will be no dedicated project support for the additional 2 months, particpation in Demo Day, or certififcate of particpation at the end of the program.
+                        </p><br><br>
+                        <!-- <a  href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank" class="sc-button"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">See 1st Edition</span></a><br> -->
+                    </div>
+                </div>
+
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>Dedicated Attendance</h5><br>
+                        <div class="price">FEE - $100</div><br><br>
+                        <p style="font-size: 15px; line-height: 1.5;">Enjoy full access to AISOC program and resources, including interactions with faculty, dedicated learning and project support, lifetime access to session recordings and codebase, opportunity to present your project to a large audience of organizations and recruiters on Demo Day, and certificate of participation at the program end.
+                        </p><br><br>
+                        <a href="#" data-toggle="modal" data-target="#perks" class="sc-button"><span style="color: #fff;">See all perks</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12" style="margin:0px auto">
+                <div class="text-center">
+                    <div class="card-media">
+                        <img style="border-radius: 10px" src="assets//images/gifs/khaby-really.gif" alt="">
+                    </div>
+
+                    <div class="countdown style-2 text-center" style="margin: auto;">
+                        <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                    
+                    <div class="button-slider mt-3">
+                        <a href="#" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter" style="background: var(--primary-color5); padding: 20px 45px;"><span style= "color: var(--color-4); font-size: 17px">Sign up now</span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section" style="background:rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div style="text-align: center; margin: auto" class="sc-heading col-lg-9">
+            <h3 style="line-height: 1.3;">AISOC is trusted by organizations</h3>
+            <!-- <p class="desc mg-bt-42" style="font-size: 22px"><b>You will understand what data science is, what it is not, and what to expect on the job to avoid common pitfalls due to prior misconceptions.</b></p> -->
+        </div>
+        <div class="sc-heading">            
+            <div class="row">
+                <div class="desc col-xl-6 col-lg-12 col-md-12 mt-3">
+                    <p class="desc">We are home to tech teams from financial institutions, consulting firms and technology companies seeking to upskill in AI engineering. 
+                        <b style="color: var(--color-1);">Enjoy corporate discounts when you register your team for AISOC.</b></p>
+
+                    <div class="logo-grid">
+                        <img src="assets/images/partners/qucoon-logo.svg" alt="organization-1">
+                        <img src="assets/images/partners/periculum-logo.png" alt="organization-2">
+                        <img src="assets/images/partners/dsn-logo.png" alt="organization-3">
+                        <img src="assets/images/partners/mtn-logo.jpg" alt="organization-4">
+                        <img src="assets/images/partners/arm-logo.png" alt="organization-5">
+                        <!-- Add more logos as needed -->
+                    </div>                    
+                </div>
+
+                <div class="col-xl-6 mt-3">
+                    <!-- <h5 style="padding: 30px; line-height: 1.4;">Enjoy corporate discounts when you register your team for AISOC</h5> -->
+                    <div class="item-media">
+                        <div class="media">
+                            <img style="border-radius: 15px;" src="assets/images/gifs/gatsby2.gif" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                <div class="button-slider mt-3" style="max-width: 330px; margin:auto; padding-bottom: 5px;">
+                    <a href="#" class="sc-button widget-social style" style="background: linear-gradient(132.71deg, #6345ED 18.12%, #DC39FC 81.74%); padding: 17px 38px;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "font-size: 16px; color: #fff; padding-left: 7px">Learn more</span></a>
+                </div>
+                <div class="button-slider" style="max-width: 330px; margin:auto">
+                    <a href="mailto:hello@aisummerofcode.org" class="sc-button btn-bordered-white" style="background: var(--primary-color5); padding: 17px 38px;"><i class="fad fa-voicemail" style="color: var(--primary-color3);"></i><span style= "color: var(--color-4); font-size: 16px; padding-left: 5px;">Contact us</span></a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)">
+    <!-- <section class="tf-section" style="background:rgba(99, 69, 237, 0.07)"> -->
+    <div class="best-seller-inner">
+            <!-- <div class="col-md-12"> -->
+        <!-- <div>
+            <h3 class="text-center" style="font-size: 38px;">Hear highlights from AISOC Season 1 stars</h3><br>
+        </div> -->
+        <!-- <div class="sc-heading style-2">
+            <div class="content-left">
+                <div class="inner">
+                    <h3 style="font-size: 36px; line-height: 1.3; margin-bottom: 10px;">Hear highlights from Season 1 stars</h3>
+                </div>
+            </div>
+        </div> -->
+            <!-- </div> -->
+        <div class="row">
+            <div class="col-md-12">              
+                <div class="content-item mt-5 col-lg-12 content-left">
+                    <h3 class="desc" style="font-size: 36px; color: var(--color-1)">Hear highlights from Season 1 stars</h3><br>
+                </div>
+                <div class="swiper-container live-auc">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img">
+                                        <!-- <img src="assets/images/testimonials/queen1.png" alt="Image"> -->
+                                        <a href="#" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register Now</span></a>
+                                        <label>TESTIMONIALS</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <!-- <img src="assets/images/avatar/queen.jpg" alt="Image"> -->
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="author.html">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img">
+                                        <!-- <img src="assets/images/testimonials/queen1.png" alt="Image"> -->
+                                        <a href="#" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register Now</span></a>
+                                        <label>TESTIMONIALS</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <!-- <img src="assets/images/avatar/queen.jpg" alt="Image"> -->
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="author.html">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img">
+                                        <!-- <img src="assets/images/testimonials/queen1.png" alt="Image"> -->
+                                        <a href="#" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register Now</span></a>
+                                        <label>TESTIMONIALS</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <!-- <img src="assets/images/avatar/queen.jpg" alt="Image"> -->
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="author.html">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img">
+                                        <!-- <img src="assets/images/testimonials/queen1.png" alt="Image"> -->
+                                        <a href="#" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register Now</span></a>
+                                        <label>TESTIMONIALS</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <!-- <img src="assets/images/avatar/queen.jpg" alt="Image"> -->
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="author.html">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img">
+                                        <!-- <img src="assets/images/testimonials/queen1.png" alt="Image"> -->
+                                        <a href="#" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register Now</span></a>
+                                        <label>TESTIMONIALS</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <!-- <img src="assets/images/avatar/queen.jpg" alt="Image"> -->
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="author.html">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe Left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section" style="background: var(--bg-body-2)"> -->
+<section class="hot-collections-page tf-section" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div class=""> -->
+                    <!-- <div class="sc-heading style-2 content-left">
+                        <div class="inner"> -->
+                            <h3 style="font-size: 38px; line-height: 1.3; margin: 0px;">Organizing Team</h3>
+                            <!-- <p class="desc">Most popular gaming digital nft market place </p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <div class="swiper-container latest-coll style-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-7.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/zion.png" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Zion Pibowei</a> </h5>
+                                        <div class="details">Head, Data Science and AI<br> Periculum
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-6.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/sam-ayo.png" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="#">Samuel Kehinde Ayo</a> </h5>
+                                        <div class="details">Senior Software & <br>AI Engineer <br> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-9.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/sam-iheagwam.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Samuel Iheagwam</a> </h5>
+                                        <div class="details">Senior DBA <br> Qore
+                                            University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-13.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Chidozie Managwu</a> </h5>
+                                        <div class="details">Senior ML Engineer <br> Texas A&M University
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-11.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Precious Osakwe</a> </h5>
+                                        <div class="details">Chief Operations Officer <br>Afriktech Travels</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/emeka.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Nnaemeka Obiefuna</a> </h5>
+                                        <div class="details">Data Scientist <br>Univelcity</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-8.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/daniel-akhabue.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Daniel Akhabue</a> </h5>
+                                        <div class="details">Machine Learning Engineer <br>Qucoon</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-6.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a>Bukunola Olorunda</a> </h5>
+                                        <div class="details">UI/UX Designer <br>RocketDevs</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new-letter creators-page" style="background:rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="new-letter-inner flex">
+            <div class="new-letter-content">
+                <h3 class="heading">AISOC 2.0 begins soon...</h3>
+                <p class="sub-heading" style="font-size: 19px">Early registration closes a week to the start date</p>
+                <div class="button-slider mt-3">
+                    <a href="#" data-toggle="modal" data-target="#popup_apply_now" style="color: #14161B; padding:19px 85px; margin:auto" class="sc-button btn-bordered-white style letter"><span>Register now</span></a>
+                </div>
+            </div>
+            <div class="new-letter-content" style="padding-top: 0px; margin: auto;">
+                <div class="item-media"> 
+                    <div class="countdown style-2b" style="background: transparent; padding: 1px; margin: auto">
+                        <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                    <!-- <div class="countdown style-2b" style="background: transparent; margin-right: 0px; padding: 0px; max-width:425px">
+                        <span class="js-countdown" data-timer="691200" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bottom">
+    <div class="container" style="padding-top:220px">
+        <div class="bottom-inner">
+            Copyright © 2025 AISOC | AI Summer of Code
+            <div class="widget-social col-lg-2 col-md-6 col-sm-6 col-6 mt-3" style="margin: auto">
+                <ul>
+                    <li><a href="https://linkedin.com/company/aisummerofcode" class="active"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://instagram.com/aisummerofcode"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/aisummerofcode"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/@aisummerofcode"><i class="fab fa-youtube"></i></a></li>
+                    <!-- <li><a href="https://bit.ly/ds-mastery-chat"><i class="fab fa-discord"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a id="scroll-top"></a>
+
+<div class="modal fade popup item-details-page" id="popup_apply_now" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3>AISOC Season 2</h3>
+                <p class="mt-3">You are about to register for Season 2 of AI Summer of Code. Select your desired plan below and register.</p>
+
+                <div id="dropdown-item-9" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Free Plan - $0</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">Attend AISOC for free, with full access to program codebase and limited access to session recordings. No project support, particpation in Demo Day, or certififcate at the end of the program.
+                                </p><br><br>
+                                <a href="#" class="sc-button style letter"></i><span style= "padding-left: 17px; color: #fff">Register</span></a><br>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-10" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Dedicated Plan - $100</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">Enjoy full access to AISOC resources, faculty, mentors, and dedicated project support. Perks include lifetime access to session recordings and program codebase, opportunity to present your project to a large audience on Demo Day, and certificate of participation at the program end.
+                                </p><br><br>
+                                <!-- <a href="#" data-toggle="modal" data-target="#popup_1" class="sc-button"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">See 1st Edition</span></a><br> -->
+                                <a href="#" class="sc-button style letter"></i><span style= "padding-left: 17px; color: #fff">Register</span></a><br>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div id="dropdown-item-11" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="#" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Corporate Plan</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">Enjoy corporate discounts when you enroll your team. Contact us below with information about your organization and the size of the team you want to enroll, and we'll get back to you with a compelling discount.
+                                </p><br><br>
+                                <a href="mailto:hello@aisummerofcode.org" class="sc-button"><i class="fad fa-voicemail" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">Contact us</span></a><br>
+                            </div>
+                        </div>
+                    </ul>
+                </div>                        
+                
+                <p class="desc mt-5" style="color: var(--color-1)"><b>AISOC 2.0 begins in</b></p>
+                <div class="item-media text-center mt-3">
+                    <div class="countdown style-2b" style="margin: auto">
+                        <span class="js-countdown" data-countdown="2025-07-25T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade popup" id="track_1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3 style="font-size: 32px;">At a Glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px"><b>Modules in Track I</b></p>
+
+                <ul style="font-size: 17px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Getting Started with Machine Learning</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Strategy and Value Streams</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Business Thinking for Data Scientists</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Systems Thinking for Data Scientists</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Success Factors for Data Science</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Science Project Workflow</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Machine Learning Engineering </p></li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="popup_1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>At a glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART I: DATA SCIENCE FOUNDATIONS</span></p>
+
+                <ul style="font-size: 18px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Introduction to Data and Analytics</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Strategy and Value Streams</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Business Thinking for Data Scientists</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Systems Thinking for Data Scientists</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Success Factors for Data Science</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Science Project Workflow</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Careers in Data Science </p></li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<div class="modal fade popup" id="popup_2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>At a glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART II: SQL, PYTHON & MATH FUNDAMENTALS</span></p>
+
+                <ul style="font-size: 18px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Introduction to SQL</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Business Analytics with SQL</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Python Programming Basics</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i> Collection Data Structures</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Functions and Modules</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Single and Multivariable Calculus </li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Introduction to Linear Algebra</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Statistics and Probability</p></li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="popup_3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>At a glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART III: WORKING WITH DATA IN PYTHON</span></p>
+ 
+                <ul style="font-size: 18px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Python Stack for Data Science</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Introduction to Descriptive Analytics</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Statistics for Data Science</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Acquisition and Manipulation</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Data Preprocessing with Pandas</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="popup_4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>At a glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART IV: EDA & STATISTICAL INFERENCE</span></p>
+
+                <ul style="font-size: 18px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Exploratory Data Analysis (EDA)</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Probabilistic Thinking: Introduction</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Probability Distributions</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Statistical Inference: Parameter Estimation</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Statistical Inference: Hypothesis Testing</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Statistical Inference: Regression Analysis</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Decision Making Under Uncertainty </p></li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="popup_5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>At a glance...</h3>
+                <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART V: MACHINE LEARNING</span></p>
+
+                <ul style="font-size: 18px">
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Machine Learning: Pattern Discovery</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Machine Learning: Predictive Analytics</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Feature Engineering and Selection</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Evaluating Machine Learning Models</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="popup_6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3>Intensive Interview Prep</h3>
+                <p class="text-center mt-5" style="font-size: 18px">This course is a series of <span class="price color-popup">comprehensive interview prep sessions</span> that will be covered in periodic live classes. <br><br> We will go over various types of data science job interview questions and case studies, as well as best practices for nailing interviews. The sessions will also cover interview rounds for graduate studies admissions in data science.</p>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="perks" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3 style="font-size: 32px;">Dedicated Plan</h3><br><br>
+                <!-- <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART I: DATA SCIENCE FOUNDATIONS</span></p> -->
+
+                <ul style="font-size: 17px; line-height: 1.6;">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Full access to live sessions + dedicated learning support</li>
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Lifetime access to program codebase & session recordings</li>
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Full access to cloud and compute resources for learning and projects</li>
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  2 months of dedicated post-learning and project support</li>
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Participation in Demo Day to pitch your project</li>
+                    <li><i class="fa fa-check-circle" style="color: #5142FC" aria-hidden="true"></i>  Certificate of completion at the end of the program</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Sign up now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/plugin.js"></script>
+<script src="assets/js/count-down.js"></script>
+<script src="assets/js/shortcodes.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+
+
+</html>
