@@ -264,7 +264,8 @@
 
 /* button style */
 .sc-button.style-2 {
-    background-image: linear-gradient(to left, #6345ED 58.12%, #DC39FC 81.74%);
+    /* background-image: linear-gradient(to left, #6345ED 58.12%, #DC39FC 81.74%); */
+    background-image: linear-gradient(to left, #6345ED 58.12%, #DC39FC 91.74%);
     border          : unset;
     background-size : 200% auto;
 }
