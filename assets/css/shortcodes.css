@@ -34,7 +34,8 @@
     /* color */
     --primary-color : #FFFFFF;
     --primary-color2: #14161B;
-    --primary-color3: #DC39FC;
+    /* --primary-color3    : #DC39FC; */
+    --primary-color3: #fff;
     --primary-color4: #616161;
     --primary-color5: #6345ED;
 }
@@ -60,7 +61,7 @@
     --color-7           : #7D7D7D;
     --color-8           : #6345ED;
     --color-9           : #969696;
-    --color-12           : rgba(99, 69, 237, 0.1);
+    --color-12          : rgba(99, 69, 237, 0.1);
     --color-10          : rgba(99, 69, 237, 0.4);
     --color-11          : #fff;
     --border-color-2    : rgba(99, 69, 237, 0.12);
@@ -85,8 +86,9 @@
     --color-4           : #343444;
     --color-5           : #14161B;
     --color-6           : rgba(255, 255, 255, 0.6);
-    --primary-color4    : #FFFFFFCC;
     --primary-color2    : #fff;
+    --primary-color3    : #DC39FC;
+    --primary-color4    : #FFFFFFCC;
     --border-color-1    : rgba(255, 255, 255, 0.15);
     --color-7           : #fff;
     --color-8           : #fff;
@@ -2539,6 +2541,17 @@ blockquote .author::before {
     transition: all 0.3s ease;
 }
 
+/* recent tweak */
+.is_dark .sc-button.active.btn-bordered-white,
+.is_dark .sc-button.btn-bordered-white span {
+    color: #343444;
+}
+
+/* recent tweak */
+.sc-button.btn-bordered-white span,
+.is_dark .sc-button.btn-bordered-white:hover span{
+    color: #fff;
+}
 
 .slider-inner .slider-content .button-slider .sc-button.btn-bordered-white:hover,
 .slider-inner .slider-content .button-slider .sc-button.btn-bordered-white {
