@@ -204,6 +204,10 @@
         dropdown('#dropdown-item-10');
         dropdown('#dropdown-item-11');
         dropdown('#dropdown-item-12');
+        dropdown('#dropdown-item-13');
+        dropdown('#dropdown-item-14');
+        dropdown('#dropdown-item-15');
+        dropdown('#dropdown-item-16');
         dropdown('#english');
         dropdown('#date-select');
         flcustominput();
