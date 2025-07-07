@@ -824,7 +824,22 @@ h6 a {
     justify-items: center;
 }
 
+.logo-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 logos per row */
+    gap: 15px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
 .logo-grid img {
+    max-width: 100%;
+    max-height: 60px; /* or whatever fits best */
+    object-fit: contain;
+}
+
+.logo-grid-2 img {
     max-width: 100%;
     max-height: 60px; /* or whatever fits best */
     object-fit: contain;
