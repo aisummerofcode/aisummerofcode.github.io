@@ -826,7 +826,7 @@ h6 a {
 
 .logo-grid-2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 4 logos per row */
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
     gap: 15px;
     padding: 20px;
     align-items: center;
