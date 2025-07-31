@@ -1,1 +1,1774 @@
-<h1>Hello from private repo</h1>
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>AI Summer of Code | Incubating AI Talents</title>
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="shortcut icon" href="assets/images/logo/aisoc-icon-2.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/aisoc-icon-2.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body class="body header-fixed is_dark">
+
+<!-- <div class="preload preload-container">
+<div class="preload-logo"></div>
+</div> -->
+
+<header id="header_main" class="header_1 js-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-button"><span></span></div>
+                <div id="site-header-inner" class="flex">
+                    <div id="site-logo" class="clearfix">
+                        <div id="site-logo-inner">
+                            <a href="index.html" rel="home" class="main-logo">
+                                <img id="logo_header" src="assets/images/logo/aisoc-logo.png" alt="aisoc-logo"
+                                    data-retina="assets/images/logo/logo_dark@2x.png">
+                                <img id="logo_icon" src="assets/images/logo/aisoc-icon.png" alt="aisoc-logo"
+                                    data-retina-mobile-src="assets/images/logo/icon@2x.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="site-menu" style="margin-right:auto">
+                        <nav id="main-nav" class="main-nav">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item current-item">
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="menu-item menu-item-has-children">
+                                    <a>Editions</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank">Season 1</a></li>
+                                        <li class="menu-item"><a href="" target="_blank">Season 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children">
+                                    <a>Events</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="events/open.html" target="_blank">AISOC Open</a></li>
+                                        <!-- <li class="menu-item"><a href="" target="_blank">AI Synopsis</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children ">
+                                    <a>Community</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item "><a href="blog" target="_blank">Blog</a></li>
+                                        <li class="menu-item"><a href="https://aisummerofcode.substack.com" target="_blank">Newsletter</a></li>
+                                        <!-- <li class="menu-item"><a href="" target="_blank">Membership</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="mailto:hello@aisummerofcode.org">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- <form class="form-search">
+                        <input type="text" placeholder="Search here">
+                        <button><i class="far fa-search"></i></button>
+                    </form> -->
+
+                    <!-- <div class="button-connect-wallet" style="margin-right: 0px;">
+                        <a href="connect-wallet.html" class="sc-button wallet style-2">
+                            <img src="assets/images/icon/connect-wallet.svg" alt="icon">
+                            <span>Register Now</span>
+                        </a>
+                    </div> -->
+
+                    <div class="countdown style-2a"
+                        style="background: transparent; text-align: center; margin-left: 0px; margin-right: 0px; padding: 0px">
+                        <a href="" data-toggle="modal" data-target="#popup_apply_now" class="js-countdown" data-countdown="2025-07-26T09:59:59"
+                            data-labels=" Days , Hours , Mins , Secs" style="font-size: 20px"></a>
+                    </div>
+
+                    <div class="mode_switcher">
+                        <h6><span>Dark Mode</span> <strong>Activate</strong></h6>
+                        <a href="" class="light d-flex align-items-center" style="margin-left: 3px;">
+                            <img src="assets/images/icon/sun.png" alt="">
+                        </a>
+                        <a href="" class="dark d-flex align-items-center is_active">
+                            <img id="moon_dark" src="assets/images/icon/moon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="fl-page-title" id="headline">
+    <div class="overlay"></div>
+        <div class="container" style="padding:0px 12px">
+
+            <div class="best-seller-inner" style="background: var(--bg-header); padding: 50px 15px">
+                <div class="page-title-heading col-lg-9 text-center" style="margin: auto">
+                    <h3 class="mt-4" style="font-size:45px">The world's largest classroom for incubating AI talents</h3>
+                </div>
+                <div class="slider-inner flex home-1 mt-5" style="padding: 15px">
+                    <div class="row">
+                        <div class="slider-content text-center" style="padding-top: 15px;">
+                            <p class="sub-heading" style="color: var(--color-1); padding: 0px 5%">AI Summer of Code (AISOC) is the annual convergence of global experts in AI with enthusiastic learners from all over the world seeking to upskill and excel in the science and engineering of AI systems. </p>
+                            <h3 class="sub-heading text-center" style="color: var(--color-1); font-size: 22px; padding: 0px;"><b>Get ready for AISOC Season 2</b><p class="text-center" style="font-size: 18px;">July 26 - November 22, 2025</p></h3>
+
+                            <div class="countdown style-2b" style="margin: auto;text-align: center; border-radius: 15px;">
+                                <span class="js-countdown" data-countdown="2025-07-26T09:59:59" data-labels=" Days  , Hours , Mins , Secs"></span>
+                                <div class="button-slider">
+                                    <a href="" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter mt-4" style="padding: 18px 96px; margin: auto"><span style="font-size:16px">Register</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-img col-xl-6 col-lg-12 col-md-12" style="margin: auto">
+                            <div class="img-home-1" style="margin: auto"><img src="assets/images/post/teamTrainingHero.png" alt="Image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section item-details-page" id="about">
+    <div class="container">
+        <!-- <div class="sc-heading col-lg-10" style="margin: auto"></div> -->
+        <div class="row">
+            <!-- <div class="col-xl-6 col-lg-12 col-md-12 mt-3"> -->
+            <div class="col-xl-6 col-lg-10" style="margin: auto">
+                <div class="content-item mt-5" style="padding-left: 0%; padding-right: 20px;">
+                    <h3 class="mg-bt-42" style="font-size:45px; line-height: 1.2; margin-bottom: 20px;"> About AISOC</h3>
+                    <p>AISOC was launched in 2024 to fill the growing gap in AI education and democratize access to world-class AI skills. With the rise and prominence of large foundation models and generative AI, and how these technologies are reshaping the world of software, it is now more important than ever to raise talents that are equipped to build the next generation of AI systems and GenAI-powered applications. <b style="color: var(--color-1);">And we are taking on this mission!</b></p>
+                    <p>Through intense, hands-on technical training in the foundations, engineering and applications of modern AI systems, AISOC stars develop rigorous understanding and mastery of the technical skills needed to build next-gen intelligent applications and push the boundaries of the AI landscape.</p>
+                    <a href="" target="_blank" class="sc-button wallet style-2"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;">Learn more</span></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12" style="margin: auto">
+                <div class="item-media" style="padding-top: 0px">
+                    <div class="media mg-bt-0">
+                        <img src="assets/images/post/Data-Asset-02-transparent.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section item-details-page"> -->
+<section class="tf-section creators-page" id="highlights" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="popup">
+                    <div class="modal-content" style="text-align: left; line-height: 1.3;">
+                        <div class="modal-body space-y-20 pd-40">
+                            <div class="content-item">
+                                <h3 class="mg-bt-42" style="text-align: left; font-size:40px">Season 1 Highlights</h3>
+                            </div>
+                            <ul>
+                                <p><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i> Over 300 registered participants from more than 10 countries</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i> Representation from a wide range of industries, professional backgrounds and experience levels in tech (Beginner to Senior+)</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i> A global expert lineup of a dozen senior professionals and leaders in data science and AI across the globe</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i> 40+ live sessions, including technical deep-dives, hands-on tutorials, workshops, expert talks, spanning 100+ hours!</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <p><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i> Hands-on capstone project after 4 weeks of intense learning!</p>
+                                <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                            </ul>
+                            <div class="button-slider mt-5 mg-bt-42" style="max-width: 330px; padding-bottom: 10px;">
+                                <a href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank" class="sc-button wallet style-2"><i class="fab fa-github" style="color: #fff;"></i><span style= "font-size: 16px; color: #fff">See More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-10" style="margin: auto">
+                <div class="content-item text-center" style="padding: 20px;">
+                    <h3 style="font-size:40px; line-height: 1.3; margin-bottom: 20px;">Season 2 promises even better</h3>
+                    <p style="font-size: 17px;">AISOC 2.0 features 4 career-focused pathways, a global expert faculty, deep dives into the latest advances in ML, LLMs and AI engineering, and real-world AI projects to help you hone your skills.<br></p>
+                    <h4 style="padding: 20px; line-height: 1.3;">An unforgettable classroom experience across 4 months!</h4>
+
+                    <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                    <p class="desc mt-5" style="margin-bottom: 0px;"><b style="color: var(--color-1); font-size: 30px">7 WEEKS</b><br><span style="font-size: 15px"> Hands-on Learning </span></p>
+                    <p class="desc" style="color: var(--color-1); margin-bottom: 5px;"><span style="font-size: 20px"> + </span></p>
+                    <p class="desc" style="margin-bottom: 30px;"><b style="color: var(--color-1); font-size: 30px">2 MONTHS</b><br><span style="font-size: 15px">Post-Learning & Dedicated Project Support</span></p>
+                    <hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                    
+                    <h5 style="color: var(--color-1)"><b>AISOC 2.0 begins in</b></h5>
+                    <div class="countdown style-2 mt-3 text-center" style="margin: auto;">
+                        <span class="js-countdown" data-countdown="2025-07-26T09:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section item-details-page" id="pathways" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="content-item col-lg-10" style="margin: auto;">
+            <h3 class="text-center" style="font-size:36px; line-height: 1.2; margin-bottom: 40px;">Choose from 4 specialist pathways across machine learning and AI engineering</p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-xl-6 col-lg-10">    
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK I: APPLIED AI</h5><br>
+                        <div class="price">LEVEL - BEGINNER</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">
+                            Learn how to build LLM chatbots, RAG-powered applications, and agentic systems for real-world use cases. 
+                            You will design APIs that interact with frontier models and external tools to provide retrieval, reasoning and conversational capabilities.
+                            Become a confident AI application developer using powerful AI tools and technologies.
+                        </p><br><br>
+                        <a href="" data-toggle="modal" data-target="#track_1" class="sc-button style-2"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK II: MACHINE LEARNING</h5><br>
+                        <div class="price">LEVEL - BEGINNER / INTERMEDIATE</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">Learn the "craftsmanship" of machine learning, including principles and practical techniques of 
+                            preparing data, designing training experiments, calibrating models, and choosing the right metrics for evaluation. 
+                            Master the underlying algorithms for a wide range of ML tasks, and ML engineering techniques for building production-ready models.
+                        </p><br><br>
+                        <a href="" data-toggle="modal" data-target="#track_2" class="sc-button style-2"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK III: LLM ENGINEERING</h5><br>
+                        <div class="price">LEVEL - INTERMEDIATE</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">
+                            Dive into the inner workings of foundation models, including LLMs and reasoning models, 
+                            from underlying math and architectures to training and finetuning techniques to deployment. 
+                            You will pretrain and finetune large models on GPUs, serve them on compute infra, 
+                            and optimize them using distributed inference and autoscaling techniques.
+                        </p><br><br>
+                        <a href="" data-toggle="modal" data-target="#track_3" class="sc-button style-2"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>TRACK IV: PRODUCTION AI</h5><br>
+                        <div class="price">LEVEL - INTERMEDIATE</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">
+                            Become a specialist in the deployment and management of AI applications at scale.
+                            You will learn how to take AI models, RAG applications and agentic systems into production. 
+                            Master the engineering best practices for designing, deploying and running scalable AI systems that serve real users in production.
+                        </p><br><br>
+                        <a href="" data-toggle="modal" data-target="#track_4" class="sc-button style-2"><span style="color: #fff;">See More</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desc col-xl-6 col-lg-12 col-md-12" id="target-audience" style="text-align: left">
+                <h3 class ="mt-5 text-center" style="font-size: 38px; line-height: 1.2; margin-bottom: 30px;"> Who should attend?</h3>
+
+                <div id="dropdown-item-5" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>APPLIED AI</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 16px; line-height: 1.5;">Beginners to LLMs and generative AI systems who want to gain mastery in the development of LLM-powered applications, chatbots, RAG pipelines and agentic systems. 
+                            Target audience includes, but is not limited to, software developers, data professionals, researchers, ML engineers, technical product managers, etc, at any levels.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-6" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>MACHINE LEARNING</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 16px; line-height: 1.5;">Data analysts/scientists, researchers, developers, or beginners seeking to 
+                            understand what it takes to build high-performing machine learning models that generalize well in the reeal world. 
+                            ML engineering focus targetted at practicing data scientists and ML engineers seeking to master the engineering of scalable ML systems.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-7" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>LLM ENGINEERING</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <!-- <p style="font-size: 15px; line-height: 1.5;">Anyone with at least fundamental knowledge building machine learning models or prototyping simple LLM-based applications such as RAG, QA systems and agents, seeking to advance their skills in the training and optimization of large language models for deployment into real-world applications. Mathematically inclined folks with computational experience using Python, MATLAB or similar programming languages but no prior experience working with ML or LLMs are also welcome to participate in this track. -->
+                        <p style="font-size: 16px; line-height: 1.5;">AI engineers, researchers, or data scientists seeking to understand the underlying principles of building and serving large language models. 
+                            Suitable for folks with some ML background or prior experience prototyping LLM applications such as RAG, QA systems and agents. 
+                            Mathematically inclined folks with computational experience are also welcome to apply.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-8" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>PRODUCTION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 16px; line-height: 1.5;">Software developers or ML/AI/data engineers seeking to build 
+                            production-grade AI systems or integrate LLMs into software applications or production data/ML pipelines. 
+                            Prior experience building traditional software, data pipelines or traditional ML systems is a plus.
+                            Familiarity prototyping LLM applications or working with OSS models and LLM APIs is also a plus.
+                        </p><br>
+                    </ul>
+                </div>
+            </div>
+                
+            <!-- <div class="col-xl-6 col-lg-10" style="margin: auto"> -->
+            <div class="desc col-xl-6 col-lg-12 col-md-12" id="prerequisites" style="text-align: left">
+                <h3 class="mt-5 text-center" style="font-size: 38px; line-height: 1.2; margin-bottom: 30px;"> Prerequisites</h3>
+
+                <div id="dropdown-item-1" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>APPLIED AI</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 16px; line-height: 1.5;">
+                            Working knowledge of a programming language such as Python, either in the context of analytics, data science or software development. 
+                            Familiarity with APIs, cloud, and web frameworks is a plus, but not strictly required.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-2" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>MACHINE LEARNING</h5>
+                    </a>
+                    <ul style="padding: 28px;">
+                        <p style="font-size: 16px; line-height: 1.5;">
+                            Working knowledge of a programming language such as Python, either in the context of analytics, data science or software development. 
+                            Prior experience in numerical and exploratory data analysis using tools like Numpy, Pandas, SQL and Matplotlib is a plus. 
+                            For the ML engineering focus, prior experience in scikit-learn or other machine learning frameworks is expected.
+                            <!-- Familiarity with APIs, cloud, and web frameworks is a plus, but not strictly required. -->
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-3" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>LLM ENGINEERING</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 16px; line-height: 1.5;">Working knowledge of Python or similar languages in the context of machine learning or software development. 
+                            At least basic familiarity with prompt engineering and LLM APIs such as OpenAI API for prototyping. 
+                            Familiarity with GPUs, CUDA, HuggingFace, deep learning frameworks such as PyTorch, or prior experience in traditional ML is a plus but not mandatory.
+                        </p><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-4" class="dropdown" style="margin-bottom: 20px;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <h5>PRODUCTION AI</h5>
+                    </a>
+                    <ul style="padding: 16px;">
+                        <p style="font-size: 16px; line-height: 1.5;">Working knowledge of Python or similar languages in the context of software development or machine learning. 
+                            At least basic familiarity with prompt engineering and LLM APIs for prototyping. 
+                            Prior experience with shell scripting, Docker and cloud platforms is a plus. 
+                            Familiarity with HuggingFace, GPUs and CUDA and is also welcome but not strictly required.
+                        </p><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="countdown style-2 mt-5 text-center" style="margin: auto;">
+            <span class="js-countdown" data-countdown="2025-07-26T09:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+        </div>
+        <div class="button-slider text-center mt-3" style="max-width: 330px; margin:auto">
+            <a href="" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter" style="padding: 20px 66px;"><span style= "font-size: 17px">Sign up now</span></a>
+            <a href="https://drive.google.com/file/d/134bp0NGYrh2-i9QxFnYx6Ac9uVol6Ldf/view?usp=drive_link" target="_blank" class="sc-button widget-social style-2 mt-3" style="padding: 22px 36px;"><i class="fad fa-download" style="color: #fff;"></i><span style= "font-size: 16.5px; color: #fff; padding-left: 10px">Download curriculum</span></a>
+            <!-- <a href="" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter" style="padding: 20px 45px;"><span style= "font-size: 17px">Download curriculum</span></a> -->
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-best-seller"> -->
+<section class="tf-section creators-page" id="faculty" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="best-seller-inner">
+
+        <div class="row">
+            <div class="col-md-12">                
+                <div class="content-item mt-5 col-lg-12 content-left">
+                    <h3 class="desc" style="color: var(--color-1)">Learn from a global expert lineup</h3><br>
+                    <p style="font-size: 18px;">20 world-class engineers, pioneers, and AI leaders to give you only the best!</p>
+                </div>
+                <div class="swiper-container latest-coll style-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/serg-masis.jpg" style="border-radius: 100px;" alt="Image">
+                                        <!-- <a href="" class="sc-button style" style="background: transparent; width: 1%;  height: 1%;"><i class="fab fa-linkedin-in" style="color: #fff; background: #6345ED; font-size: 16px; padding: 4px; border-radius: 5px;"></i></a> -->
+                                        <!-- <label href="https://zion.com" style="cursor: pointer; background: transparent; width: 100%; right: 0; text-align: center;"><i class="fab fa-linkedin-in" style="color: #fff; background: #6345ED; font-size: 17px; padding: 5px; border-radius: 5px; text-align: center;"></i></label> -->
+                                        <a href="https://www.linkedin.com/in/smasis" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #6345ED 17.35%, #DC39FC 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Serg Masis</a> </h6>
+                                        <div class="details">Principal AI Scientist<br>Syngenta</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/elena.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/elenasamuylova" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <!-- <div class="product-content">
+                                        <h5 class="title"><a>"Data Literacy and the Business of Data Science"</a> </h5>
+                                    </div> -->
+                                    <div class="card-content text-center">
+                                        <h6><a>Elena Samuylova</a> </h6>
+                                        <div class="details">CEO & Co-founder<br>Evidently AI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/opeyemi-fabiyi.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/opeyemifabiyi" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Opeyemi Fabiyi</a> </h6>
+                                        <div class="details">Analytics Manager<br>Data Culture</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/zion.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/zion-pibowei" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Zion Pibowei</a> </h6>
+                                        <div class="details">Head, Data Science and AI<br>Periculum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/emeli.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/emelidral" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Emeli Dral</a> </h6>
+                                        <div class="details">Co-founder & CTO<br>Evidently AI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/ridwan-amure.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/ridwan-amure" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Ridwan Amure</a> </h6>
+                                        <div class="details">ML Researcher, COSMOS Research Center, UALR</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/adebayo.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/adebayo-oshingbesan" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Adebayo Oshingbesan</a> </h6>
+                                        <div class="details">ML Engineer & AI Solutions Architect, DHB-AI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/kacper.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/kacperlukawski" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Kacper Lukawski</a> </h6>
+                                        <div class="details">Senior Developer Advocate<br>Qdrant</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/nancy-amandi.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/nancy-amandi" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Nancy Amandi</a> </h6>
+                                        <div class="details">Data Engineer<br>Moniepoint</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/chidozie.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/chidozie-managwu" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Chidozie Managwu</a> </h6>
+                                        <div class="details">Senior ML Engineer<br>Texas A&M University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/gagandeep.jpeg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/gagandeep" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Gagandeep Singh</a> </h6>
+                                        <div class="details">Senior ML Engineer<br>Chime</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/caleb-chinga.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/calebchinga" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Caleb Chinga</a> </h6>
+                                        <div class="details">Head, Digital Engineering<br>AXA Mansard</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/jeffrey.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/jeffreyotoibhi" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Jeffrey Otoibhi</a> </h6>
+                                        <div class="details">Lead Researcher<br>SabiYarn</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/quadri-oshoare.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/abdulquadri-ayodeji" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Abdulquadri Oshoare</a> </h6>
+                                        <div class="details">Senior Data Engineer<br>Credit Direct</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/sam-ayo.png" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/sam-ayo" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Samuel Ayo</a> </h6>
+                                        <div class="details">Senior Software &<br>AI Engineer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/aishit.png" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/aishit-dharwal" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Aishit Dharwal</a> </h6>
+                                        <div class="details">Head of AI<br>Skooc</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/daniel-akhabue.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/daniel-akhabue" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Daniel Akhabue</a> </h6>
+                                        <div class="details">Machine Learning Engineer<br>Qucoon</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/speakers/emeka.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/donmonc" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Nnaemeka Obiefuna</a> </h6>
+                                        <div class="details">Data Scientist & Researcher<br>Univelcity</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/david-okpare.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/david-okpare" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>David Okpare</a> </h6>
+                                        <div class="details">AI Software Engineer & OSS Contibutor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/temitayo.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/temitayo-adejuyigbe" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>Temitayo Adejuyigbe</a> </h6>
+                                        <div class="details">Senior ML Engineer<br>Periculum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section login-page register-page"> -->
+<section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-create-item-content">
+                    <div class="form-background">
+                        <img src="assets/images/background/img-more.jpg" alt="">
+                    </div>
+                    <div class="form-create-item col-xl-8" style="padding: 30px;">
+                        <div class="sc-heading">
+                            <div class="content-item" style="margin: 40px 20px; padding-right: 20px;">
+                                <h3 class="mg-bt-42" style="font-size:32px; padding-top: 20px;"> Build mastery through hands-on projects</h3>
+                                <p style="font-size: 17px; line-height: 1.5;">Get your hands dirty in real-world projects using real-world infrastructure to apply the skills you have learned. 
+                                    You will get to build a practical use case addresing a real-world problem relevant to a specific niche or industry. 
+                                    Your solution will be end-to-end, deployed for end users to interact with based on your chosen use case.</b></p>
+                                <!-- <a href="" target="_blank" class="sc-button" style="background: #6345ED; padding: 17px 38px; margin: auto;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;; padding-left: 7px">Learn more</span></a> -->
+                                <br><br><a href="https://github.com/aisummerofcode/aisoc-season-1/blob/main/projects.md" target="_blank" class="sc-button widget-social" style="padding: 17px 25px;"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; font-size: 16px; color: #fff">See Example</span></a>
+                            </div>
+                            <div class="content-item" style="margin: 40px 20px; padding-right: 20px;">
+                                <br><hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <h3 class="mg-bt-42" style="font-size:32px; padding-top: 20px;"> Develop skills in a wide-range of tooling and infrastructure</h3>
+                                <div class="logo-grid-2">
+                                    <img src="assets/images/tooling/scikit-learn.png">
+                                    <!-- <img src="assets/images/tooling/LightningAI-grid.png"> -->
+                                    <img src="assets/images/tooling/langchain-seeklogo.png">
+                                    <img src="assets/images/tooling/fastapi-logo.png">
+                                    <img src="assets/images/tooling/unsloth-logo.png">
+                                    <img src="assets/images/tooling/chroma-logo.svg">
+                                    <img src="assets/images/tooling/openai-logo.png">
+                                    <img src="assets/images/tooling/mongodb-spring-green.png">
+                                    <img src="assets/images/tooling/lightning-logo.svg">
+                                    <img src="assets/images/tooling/mindsdb-logo.png">
+                                    <img src="assets/images/tooling/dbt.png">
+                                    <img src="assets/images/tooling/groq-logo.png">
+                                    <img src="assets/images/tooling/huggingface.png">
+                                    <img src="assets/images/tooling/evidently-ai-logo.jpg">
+                                    <img src="assets/images/tooling/rayserve.png">
+                                    <!-- <img src="assets/images/tooling/streamlit-logo.png"> -->
+                                    <img src="assets/images/tooling/wandb-logo.svg">
+                                    <img src="assets/images/tooling/google-cloud.png">
+                                </div>
+                            </div>
+                            <div class="content-item" style="margin: 40px 20px; padding-right: 20px;">
+                                <br><hr style="height:1px;width:100%;border-width:0;color:lightgray;background-color:lightgray">
+                                <h3 class="mg-bt-42" style="font-size:32px; padding-top: 40px;"> Demo Day - your chance to shine!</h3>
+                                <p style="font-size: 17px; line-height: 1.5;">Get a chance to demo your project at the closing physical ceremony in front of a large audience including business executives, hiring managers and recruiters. 
+                                    This is an opportunity to showcase your technical mastery and attract new opportunities for your career.<br></p>
+                                <!-- <a href="" target="_blank" class="sc-button" style="background: #6345ED; padding: 17px 38px; margin: auto;"><i class="fab fa-dribbble" style="color: #fff;"></i><span style= "color: #fff; font-size: 15px;; padding-left: 7px">Learn more</span></a> -->
+                                <!-- <a href="https://github.com/aisummerofcode/aisoc-season-1/blob/main/projects.md" target="_blank" class="sc-button widget-social" style="padding: 17px 25px;"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; font-size: 16px; color: #fff">See Example</span></a> -->
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section creators-page" style="background: rgba(99, 69, 237, 0.07)"> -->
+<section class="tf-section item-details-page" id="plans" style="background: var(--bg-body-2)">
+    <div class="container">
+
+        <div>
+            <h3 style="font-size:38px; line-height: 1.2; margin-bottom: 30px; text-align: center;">Enjoy flexible enrollment plans</p>
+        </div>
+        <div class="row"> 
+            <div class="col-xl-6 col-lg-10">
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>Free Attendance</h5><br>
+                        <div class="price">FEE - $0</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">Attend AISOC free of charge. Enjoy full access to the program codebase but limited access to session recordings. There will be no dedicated project support for the additional 2 months, particpation in Demo Day, or certififcate of particpation at the end of the program.
+                        </p><br><br>
+                        <!-- <a  href="https://github.com/ai-summer-of-code/aisoc-season-1" target="_blank" class="sc-button"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">See 1st Edition</span></a><br> -->
+                    </div>
+                </div>
+
+                <div class="infor-bid">
+                    <div style="margin: 10px;">
+                        <h5>Dedicated Attendance</h5><br>
+                        <div class="price">FEE - $100</div><br><br>
+                        <p style="font-size: 16px; line-height: 1.5;">Enjoy full access to AISOC program and resources, including interactions with faculty, dedicated learning and project support, lifetime access to session recordings and codebase, opportunity to present your project to a large audience of organizations and recruiters on Demo Day, and certificate of participation at the program end.
+                        </p><br><br>
+                        <a href="" data-toggle="modal" data-target="#perks" class="sc-button style-2"><span style="color: #fff;">See all perks</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12" style="margin:0px auto">
+                <div class="text-center">
+                    <div class="card-media">
+                        <img style="border-radius: 10px" src="assets//images/gifs/khaby-really.gif" alt="">
+                    </div>
+
+                    <div class="countdown style-2 text-center" style="margin: auto;">
+                        <span class="js-countdown" data-countdown="2025-07-26T09:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                    
+                    <div class="button-slider mt-3">
+                        <a href="" data-toggle="modal" data-target="#popup_apply_now" class="sc-button btn-bordered-white style letter" style="padding: 20px 45px;"><span style= "font-size: 17px">Sign up now</span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section" id="corporate" style="background:rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div style="text-align: center; margin: auto" class="sc-heading col-lg-9">
+            <h3 style="line-height: 1.3;">AISOC is trusted by organizations</h3>
+            <!-- <p class="desc mg-bt-42" style="font-size: 22px"><b>You will understand what data science is, what it is not, and what to expect on the job to avoid common pitfalls due to prior misconceptions.</b></p> -->
+        </div>
+        <div class="sc-heading">            
+            <div class="row">
+                <div class="desc col-xl-6 col-lg-12 col-md-12 mt-3">
+                    <p class="desc">We are home to tech teams from financial institutions, consulting firms and technology companies seeking to upskill in AI engineering. 
+                        <b style="color: var(--color-1);">Enjoy corporate discounts when you register your team for AISOC.</b></p>
+
+                    <div class="logo-grid">
+                        <img src="assets/images/partners/qucoon-logo.svg" alt="organization-1">
+                        <img src="assets/images/partners/periculum-logo.png" alt="organization-2">
+                        <img src="assets/images/partners/dsn-logo.png" alt="organization-3">
+                        <img src="assets/images/partners/mtn-logo.jpg" alt="organization-4">
+                        <img src="assets/images/partners/arm-logo.png" alt="organization-5">
+                        <!-- Add more logos as needed -->
+                    </div>                    
+                </div>
+
+                <div class="col-xl-6 mt-3">
+                    <!-- <h5 style="padding: 30px; line-height: 1.4;">Enjoy corporate discounts when you register your team for AISOC</h5> -->
+                    <div class="item-media">
+                        <div class="media">
+                            <img style="border-radius: 15px;" src="assets/images/gifs/gatsby2.gif" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                <div class="button-slider mt-3" style="max-width: 330px; margin:auto; padding-bottom: 5px;">
+                    <a href="https://drive.google.com/file/d/1gkh4KtFip_Dy1kyZH0XDLE5GWJMxlLdQ/view?usp=drive_link" target="_blank" class="sc-button widget-social style-2" style="padding: 19px 48px;"><i class="fad fa-lightbulb-dollar" style="color: #fff;"></i><span style= "font-size: 17px; color: #fff; padding-left: 7px">Learn more</span></a>
+                </div>
+                <div class="button-slider" style="max-width: 330px; margin:auto">
+                    <a href="mailto:hello@aisummerofcode.org" class="sc-button btn-bordered-white" style="background: var(--primary-color5); padding: 18px 48px;"><i class="fad fa-voicemail" style="color: var(--primary-color3);"></i><span style= "font-size: 17px; padding-left: 5px;">Contact us</span></a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section creators-page" id="testimonials" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="best-seller-inner">
+        <div class="row">
+            <div class="col-md-12">              
+                <div class="content-item mt-5 col-lg-12 content-left">
+                    <h3 class="desc" style="font-size: 36px; color: var(--color-1)">Hear highlights from Season 1 stars</h3><br>
+                </div>
+                <div class="swiper-container live-auc">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img" style="background: var(--bg-body-2); border-radius: 20px;">
+                                        <div class="media" style="padding: 25px;">
+                                            <p style="text-align: left; font-size: 14px; line-height: 1.5;">
+                                                <i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i>
+                                                <span class="short-text">
+                                                    The experience from AISOC directly contributed to landing my first full-time international role as a Senior AI Engineer. 
+                                                    I joined AISOC at a time when I was seriously considering leaving Data Science for Mobile Development, but everything changed during the program. 
+                                                    The depth of expertise from the speakers and clarity with which they taught reignited my passion for Al and helped me...
+                                                </span>
+                                                <a href="#" data-toggle="modal" data-target="#readmore-item-1" style="color: var(--color-1); display: inline-block;">Read more</a>
+                                                <br><br>
+                                            </p>
+                                        </div>
+                                        <!-- <a href="" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register</span></a> -->
+                                        <label>TESTIMONIAL</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <img src="assets/images/testimonials/akolade.jpg" alt="Image">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="">Akolade Hamzat</a></div>
+                                                <span>ML/AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe <i class="fad fa-long-arrow-alt-right"></i></div>
+                                            <!-- <div class="title">Swipe Left</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img" style="background: var(--bg-body-2); border-radius: 20px;">
+                                        <div class="media" style="padding: 25px;">
+                                            <p class="desc" style="font-size: 14px; line-height: 1.5; text-align: left;"><i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i> I had joined many programs in the past, 
+                                                but not one with so much practical guidance like AISOC. After the program, I landed an AI Engineering internship,
+                                                acquired gigs and made lots of money with the knowledge from AISOC. 
+                                                Most of the questions I encountered in interviews were problems that were addressed during the program. 
+                                                AISOC was truly an eye opener. I highly recommend.<br><br></p>
+                                        </div>
+                                        <a href="" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register</span></a>
+                                        <label>TESTIMONIAL</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <img src="assets/images/testimonials/kingsley-ibekwe.jpg" alt="Image">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="">Kingsley Ibekwe</a></div>
+                                                <span>AI Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe <i class="fad fa-long-arrow-alt-right"></i></div>
+                                            <!-- <div class="title">Swipe Left</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img" style="background: var(--bg-body-2); border-radius: 20px;">
+                                        <div class="media" style="padding: 25px;">
+                                            <p class="desc" style="font-size: 14px; line-height: 1.5; text-align: left;"><i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i> 
+                                                Before the program, I was trying to balance my 9-5 with personal developement, 
+                                                but it was so difficut. However, when i saw the AISOC program lineup and curriculum, 
+                                                I knew I needed to dedicate to it, and this has accelereted my knowledge and skill.
+                                                I shot at a competition using the knowledge from this program 
+                                                and came second place by a 0.5 difference from the winner.
+                                                <br><br>
+                                            </p>
+                                        </div>
+                                        <a href="" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register</span></a>
+                                        <label>TESTIMONIAL</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <img src="assets/images/testimonials/benedict.jpg" alt="Image">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="">Benedict Ejelonu</a></div>
+                                                <span>AI Researcher</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <!-- <div class="title">Swipe Left</div> -->
+                                            <div class="title">Swipe <i class="fad fa-long-arrow-alt-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img" style="background: var(--bg-body-2); border-radius: 20px;">
+                                        <div class="media" style="padding: 25px;">
+                                            <p class="desc" style="font-size: 14px; line-height: 1.5; text-align: left;"><i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i> 
+                                                Honestly, thank you guys so much for the immense value delivered throughout the course.
+                                                It is so exciting to see that you guys under-promised and over delivered. 
+                                                I got so much value out of it. It's an immense benefit to my journey.
+                                                I always wanted to go into AI, but have been limited by various factors, 
+                                                but this AISOC was a very fantastic one for me and I'm glad i committed to it.
+                                                <br><br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <a href="" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register</span></a>
+                                        <label>TESTIMONIAL</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <img src="assets/images/testimonials/kelvin-c.jpg" alt="Image">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="">Kelvin C.</a></div>
+                                                <span>Software Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe <i class="fad fa-long-arrow-alt-right"></i></div>
+                                            <!-- <div class="title">Swipe Left</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-2">
+                                    <div class="product-img" style="background: var(--bg-body-2); border-radius: 20px;">
+                                        <div class="media" style="padding: 25px;">
+                                            <p class="desc" style="font-size: 14px; line-height: 1.5; text-align: left;"><i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i> 
+                                                AISOC Season 1 was very robust (theoretical & practical). It blew my expectations.
+                                                There's lot of noise out there now at the moment, but AISOC is the perfect place to begin.
+                                                I'll encourage any one joining the program to follow concepts carefully and actually understand why you are doing what.
+                                                Thanks to the AISOC team for putting this program together!
+                                                <br><br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <a href="" data-toggle="modal" data-target="#popup_apply_now"
+                                            class="sc-button style letter"><span>Register</span></a>
+                                        <label>TESTIMONIAL</label>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-author flex">
+                                            <div class="avatar">
+                                                <img src="assets/images/testimonials/chris-ozoemena.jpg" alt="Image">
+                                            </div>
+                                            <div class="infor">
+                                                <div class="author-name"><a href="">Chris Ozoemena</a></div>
+                                                <span>Data Scientist</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price flex">
+                                            <div class="title">Swipe <i class="fad fa-long-arrow-alt-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="tf-section" style="background: var(--bg-body-2)"> -->
+<section class="hot-collections-page tf-section" id="organizers" style="background: rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div class=""> -->
+                    <!-- <div class="sc-heading style-2 content-left">
+                        <div class="inner"> -->
+                            <h3 style="font-size: 38px; line-height: 1.3; margin: 0px;">Organizing Team</h3>
+                            <!-- <p class="desc">Most popular gaming digital nft market place </p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <div class="swiper-container latest-coll style-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-7.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/zion.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Zion Pibowei</a> </h5>
+                                        <div class="details">Head, Data Science and AI<br>Periculum</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-6.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/sam-ayo.png" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Samuel Kehinde Ayo</a> </h5>
+                                        <div class="details">Senior Software & <br>AI Engineer<br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-9.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/bukky.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Bukunola Olorunda</a> </h5>
+                                        <div class="details">UI/UX Designer <br>RocketDevs</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-13.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/sam-iheagwam.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Samuel Iheagwam</a> </h5>
+                                        <div class="details">Senior DBA <br> Qore Technologies</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-11.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/chidozie.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Chidozie Managwu</a> </h5>
+                                        <div class="details">Senior ML Engineer <br>Texas A&M University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/precious-osakwe.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Precious Osakwe</a> </h5>
+                                        <div class="details">Chief Operations Officer <br>Afriktech Travels</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-8.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/emeka.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Nnaemeka Obiefuna</a> </h5>
+                                        <div class="details">Data Scientist <br>Univelcity</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-6.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/victoria.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Victoria  Abidoye</a> </h5>
+                                        <div class="details">Marketing Specialist | Cofounder <br>Digital Brainiacs</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item" style="background: var(--bg-header)">
+                            <div class="slider-item">
+                                <div class="sc-author-card mg-bt-0">
+                                    <div class="card-media">
+                                        <img src="assets/images/img-collection/collection-7.jpg" alt="">
+                                    </div>
+                                    <div class="card-avatar">
+                                        <img src="assets/images/avatar/daniel-akhabue.jpg" alt="">
+                                    </div>
+                                    <div class="card-content">
+                                        <h5><a href="">Daniel Akhabue</a> </h5>
+                                        <div class="details">Machine Learning Engineer <br>Qucoon</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next btn-slide-next "></div>
+                    <div class="swiper-button-prev btn-slide-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new-letter creators-page" style="background:rgba(99, 69, 237, 0.07)">
+    <div class="container">
+        <div class="new-letter-inner flex">
+            <div class="new-letter-content">
+                <h3 class="heading">AISOC 2.0 begins soon...</h3>
+                <p class="sub-heading" style="font-size: 19px">Registration closes once session begins. Don't miss out on it!</p>
+                <div class="button-slider mt-3">
+                    <a href="" data-toggle="modal" data-target="#popup_apply_now" style="color: #14161B; padding:18px 75px; margin:auto" class="sc-button btn-bordered-white style letter"><span>Register now</span></a>
+                </div>
+            </div>
+            <div class="new-letter-content" style="padding-top: 0px; margin: auto;">
+                <div class="item-media"> 
+                    <div class="countdown style-2b" style="background: transparent; padding: 1px; margin: auto">
+                        <span class="js-countdown" data-countdown="2025-07-26T09:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                    <!-- <div class="countdown style-2b" style="background: transparent; margin-right: 0px; padding: 0px; max-width:425px">
+                        <span class="js-countdown" data-timer="691200" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bottom">
+    <div class="container" style="padding-top:220px">
+        <div class="bottom-inner">
+            Copyright © 2025 AISOC | AI Summer of Code
+            <div class="widget-social col-lg-2 col-md-6 col-sm-6 col-6 mt-3" style="margin: auto">
+                <ul>
+                    <li><a href="https://linkedin.com/company/aisummerofcode" class="active"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://instagram.com/aisummerofcode"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/aisummerofcode"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/@aisummerofcode"><i class="fab fa-youtube"></i></a></li>
+                    <!-- <li><a href="https://bit.ly/ds-mastery-chat"><i class="fab fa-discord"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a id="scroll-top"></a>
+
+<div class="modal fade popup item-details-page" id="popup_apply_now" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3>AISOC Season 2</h3>
+                <p class="mt-3">You are about to register for Season 2 of AI Summer of Code. Select your desired plan below and register.</p>
+
+                <div id="dropdown-item-9" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Free Plan - $0</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">
+                                    Attend AISOC for free, with limited access to live sessions and recordings. 
+                                    No project support, particpation in Demo Day, or certificate at the end of the program.
+                                    <br><br>
+                                    <b style="color: var(--color-1)">Registration for the Free Plan is now officially closed.</b> Please check the Dedicated Plan to continue your registration.
+                                </p><br>
+                                <a href="https://forms.gle/tSMMmXTimZ3AFXLk8" target="_blank" class="sc-button style-2"><i class="fad fa-link" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">Register</span></a><br>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-10" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Dedicated Plan - $100</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">
+                                    Enjoy full access to AISOC resources, faculty, mentors, and dedicated project support. 
+                                    You will get an opportunity to present your project to a large audience on Demo Day, 
+                                    and a certificate of participation at the program end.
+                                    <br><br>
+                                    Payment in 2 installments is available for registrations within Nigeria.
+                                </p><br>
+                                <!-- <a href="" data-toggle="modal" data-target="#popup_1" class="sc-button"><i class="fab fa-github" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">See 1st Edition</span></a><br> -->
+                                <!-- <a href="https://app.budpay.com/pay/aisoc2025" class="sc-button style letter"></i><span style= "padding-left: 17px; color: #fff">Register within Nigeria</span></a><br> -->
+                                <!-- <a href="https://flutterwave.com/pay/aisoc2025" class="sc-button style letter"></i><span style= "padding-left: 17px; color: #fff">Register outside Nigeria</span></a><br> -->
+                                
+                                <a href="" data-toggle="modal" data-target="#apply_regions" data-dismiss="modal" aria-label="Close" class="sc-button style-2"><i class="fad fa-link" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">Register</span></a><br>
+                                
+                                <!-- <a href="" data-toggle="modal" data-target="#apply_options_local" data-dismiss="modal" aria-label="Close" class="sc-button widget-social" style="background-image: linear-gradient(to right, #6345ED 18.12%, #DC39FC 81.74%); padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Register within Nigeria</span></a>
+                                <a href="" data-toggle="modal" data-target="#apply_options_intl" data-dismiss="modal" aria-label="Close" class="sc-button btn-bordered-white mt-3" style="background: var(--primary-color5); padding: 17px 34px;"><i class="fad fa-link" style="color: var(--primary-color3);"></i><span style= "padding-left: 5px;">Register outside Nigeria</span></a> -->
+
+                                <!-- <a href="https://app.budpay.com/pay/aisoc2025" target="_blank" class="sc-button widget-social" style="background-image: linear-gradient(to right, #6345ED 18.12%, #DC39FC 81.74%); padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Register within Nigeria</span></a>
+                                <a href="https://flutterwave.com/pay/aisoc2025" target="_blank" class="sc-button btn-bordered-white mt-3" style="background: var(--primary-color5); padding: 17px 34px;"><i class="fad fa-link" style="color: var(--primary-color3);"></i><span style= "color: var(--color-4); padding-left: 5px;">Register outside Nigeria</span></a> -->
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                
+                <div id="dropdown-item-11" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="" class="btn-selector nolink" style="padding: 28px;">
+                        <span>Corporate Plan</span>
+                    </a>
+                    <ul>
+                        <div class="infor-bid">
+                            <div style="margin: 10px;">
+                                <p style="font-size: 15px; line-height: 1.5;">Enjoy corporate discounts on the Dedicated Plan when you enroll your team. Contact us below with information about your organization and the size of the team you want to enroll, and we'll get back to you with a compelling discount.
+                                </p><br>
+                                <a href="mailto:hello@aisummerofcode.org" class="sc-button"><i class="fad fa-voicemail" style="color: #fff;"></i><span style= "padding-left: 7px; color: #fff">Contact us</span></a><br>
+                            </div>
+                        </div>
+                    </ul>
+                </div>                        
+                
+                <h5 class="desc mt-5" style="color: var(--color-1)"><b>AISOC 2.0 late registration deadline</b><p class="text-center mt-3" >Aug 8, 2025</p></h5>
+                <div class="item-media text-center mt-3">
+                    <div class="countdown style-2b" style="margin: auto">
+                        <span class="js-countdown" data-countdown="2025-08-08T23:59:59" data-labels=" Days  , Hour , Mins , Secs"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade popup item-details-page" id="apply_regions" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3 style="font-size: 36px;">Dedicated Plan</h3>
+                <p class="mt-3">Select your region</p>
+                <a href="" data-toggle="modal" data-target="#apply_options_local" data-dismiss="modal" aria-label="Close" class="sc-button widget-social style-2 mt-3" style="padding: 17px 36px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Register within Nigeria</span></a>
+                <br><a href="" data-toggle="modal" data-target="#apply_options_uk" data-dismiss="modal" aria-label="Close" class="sc-button widget-social mt-3" style="background: #6345ED; padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Register within the UK</span></a>
+                <!-- <br><a href="" data-toggle="modal" data-target="#apply_options_india" data-dismiss="modal" aria-label="Close" class="sc-button widget-social mt-3" style="background: #6345ED; padding: 17px 43px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 9px">Register within India</span></a> -->
+                <br><a href="" data-toggle="modal" data-target="#apply_options_intl" data-dismiss="modal" aria-label="Close" class="sc-button btn-bordered-white mt-3 mg-bt-42" style="padding: 17px 33px;"><i class="fad fa-link" style="color: var(--primary-color3);"></i><span style= "padding-left: 5px;">Register anywhere else</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup item-details-page" id="apply_options_local" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3 style="font-size: 36px;">Dedicated Plan</h3>
+                <p class="mt-3">Select a payment option</p>
+                <a href="https://app.budpay.com/pay/aisoc2025" target="_blank" class="sc-button widget-social style-2 mt-3" style="padding: 17px 42px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll single track</span></a>
+                <br><a href="https://app.budpay.com/pay/aisocdoubletracks" target="_blank" class="sc-button widget-social mt-3" style="background: #6345ED; padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll double tracks</span></a>
+                <br><a href="https://flutterwave.com/pay/aisoc-instalment-plan" target="_blank" class="sc-button btn-bordered-white mt-3 mg-bt-42" style="padding: 17px 33px;"><i class="fad fa-link" style="color: var(--primary-color3);"></i><span style= "padding-left: 5px;">Pay in 2 installments</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup item-details-page" id="apply_options_uk" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3 style="font-size: 36px;">Dedicated Plan</h3>
+                <p class="mt-3">Select a payment option</p>
+                <a href="https://selar.com/aisoc2025?currency=GBP" target="_blank" class="sc-button widget-social style-2 mt-3" style="padding: 17px 42px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll single track</span></a>
+                <br><a href="https://selar.com/aisocdoubletracks?currency=GBP" target="_blank" class="sc-button widget-social mt-3 mg-bt-42" style="background: #6345ED; padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll double tracks</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal fade popup item-details-page" id="apply_options_india" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3 style="font-size: 36px;">Dedicated Plan</h3>
+                <p class="mt-3">Select a payment option</p>
+                <a href="https://flutterwave.com/pay/aisocindia2025" target="_blank" class="sc-button widget-social style-2 mt-3" style="padding: 17px 42px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll single track</span></a>
+                <br><a href="https://flutterwave.com/pay/aisocindiadoubletracks" target="_blank" class="sc-button widget-social mt-3 mg-bt-42" style="background: #6345ED; padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll double tracks</span></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade popup item-details-page" id="apply_options_intl" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-5">
+                <h3 style="font-size: 36px;">Dedicated Plan</h3>
+                <p class="mt-3">Select a payment option</p>
+                <a href="https://selar.com/aisoc2025?currency=USD" target="_blank" class="sc-button widget-social style-2 mt-3" style="padding: 17px 42px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll single track</span></a>
+                <br><a href="https://selar.com/aisocdoubletracks?currency=USD" target="_blank" class="sc-button widget-social mt-3 mg-bt-42" style="background: #6345ED; padding: 17px 38px;"><i class="fad fa-link" style="color: #fff;"></i><span style= "color: #fff; padding-left: 5px">Enroll double tracks</span></a>
+                <!-- <br><a href="https://flutterwave.com/pay/aisoc-instalment-plan" target="_blank" class="sc-button btn-bordered-white mt-3 mg-bt-42" style="background: var(--primary-color5); padding: 17px 33px;"><i class="fad fa-link" style="color: var(--primary-color3);"></i><span style= "padding-left: 5px;">Pay in 2 installments</span></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="track_1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20" style="padding: 25px;">
+                <!-- <p style="font-size: 32px; line-height: 1.3; text-align: center;"><b>Topics in Track I</b></p> -->
+                <h3 style="font-size: 30px; line-height: 1.3;">At a Glance</h3>
+                <p class="text-center" style="font-size: 18px"><b>Topics in Track I</b></p>
+
+                <ul style="font-size: 15px; max-height: 60vh; overflow: auto;">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Getting Started with Large Language Models</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Build Your First LLM App - Raw and Stupid</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Techniques for Making LLMs Useful</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model & Infrastructure Ecosystem for AI</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Understanding Embeddings & Vector DBs</li>
+                    <!-- <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Understanding Tokenization & Self Attention</li> -->
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Retrieval-Augmented Generation Deep Dive</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Build a Streamlit Frontend for Your LLM App</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Implementing Memory in Chat Engines</li>
+                    <!-- <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  RAG with Internet Search Capabilities</li> -->
+                    <!-- <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Tool Use & Structured Outputs</li> -->
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: Designing LLM Applications</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Data Engineering for LLM Applications</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Evaluating & Optimizing LLM Applications</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Building LLM Agents (search, code, etc)</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model Context Protocol & Multi-Agent Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Conversational Analytics: RAG Over Databases</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: High-Performance Applications</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: PoC Deployments with Vercel</li>
+                </ul>
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup item-details-page" id="track_2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 text-center mt-3">
+                <!-- <h3 style="font-size: 32px; line-height: 1.3;">Topics in Track II</h3> -->
+                <h3 style="font-size: 30px; line-height: 1.3;">At a Glance</h3>
+                <p class="text-center" style="font-size: 18px"><b>Topics in Track II</b></p>
+
+                <div id="dropdown-item-13" class="dropdown" style="margin-bottom: 20px; text-align: left;">
+                    <a href="" class="mt-4 btn-selector nolink" style="padding: 15px 22px 10px 22px;">
+                        <h6>ML FOUNDATIONS</h6>
+                        <p class="mg-bt-0" style="font-size: 15px;">Beginner</p>
+                    </a>
+                    <ul style="font-size: 15px; padding-left: 22px; max-height: 50vh; overflow: auto;">
+                        <span><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Getting Started with ML</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Preparing Data for Machine Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Workflow with Python & Scikit-Learn</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Statistical Methods in Machine Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Mathematical Methods in Machine Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Introduction to Empirical Risk Minimization</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Regression and Classification Deep Dive</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Machine Learning Experiment Design</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Calibrating Models with Conformal Prediction</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Unsupervised Learning Deep Dive</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Neural Networks and Deep Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Feature Engineering & Selection</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model Evaluation, Finetuning & Selection</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Designing ML Systems</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Practical Challenges in Machine Learning</span>
+                        <br><br><br>
+                    </ul>
+                </div>
+
+                <div id="dropdown-item-14" class="dropdown" style="text-align: left;">
+                    <a href="" class="btn-selector nolink" style="padding: 15px 22px 10px 22px;">
+                        <h6>ML ENGINEERING</h6>
+                        <p class="mg-bt-0" style="font-size: 15px;">Intermediate</p>
+                    </a>
+                    <ul style="font-size: 15px; padding-left: 22px; max-height: 50vh; overflow: auto;">
+                        <span><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Tooling & Infrastructure Ecosystem for ML</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Statistical Methods in Machine Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Mathematical Methods in Machine Learning</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Machine Learning Experiment Design</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Calibrating Models with Conformal Prediction</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AutoML & Neural Architecture Search</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model Evaluation, Finetuning & Selection</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Designing ML Systems</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Data Management for ML</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: High-Performance Modelling</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  MLOps: Reproducibility & ML Infrastructure</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  MLOps: Orchestration & Deployment</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Model Interpretability</span>
+                        <span><br><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Data & Model Observability </span>
+                        <br><br><br>
+                    </ul>
+                </div>
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="modal fade popup" id="track_2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3 style="font-size: 32px; line-height: 1.3;">At a Glance...</h3>
+                <p class="text-center" style="font-size: 18px"><b>Topics in Track II</b></p>
+
+                <ul style="font-size: 16px">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Getting Started with ML</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Statistical Methods of ML</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Mathematical Methods of ML</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Regression and Classification Deep Dive</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Machine Learning Experiment Design</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Feature Engineering & Selection</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model Evaluation & Selection</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Interpretability in Machine Learning</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Multistage Bias Detection and Treatment</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Designing ML Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Deploying ML Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Model Serving Patterns</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Reproducibility & MLOps</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  ML Engineering: Observability</li>
+                </ul>
+
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade popup" id="track_3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20" style="padding: 25px;">
+                <!-- <h3 style="font-size: 32px; line-height: 1.3;">Topics in Track I</h3> -->
+                <h3 style="font-size: 30px; line-height: 1.3;">At a Glance</h3>
+                <p class="text-center" style="font-size: 18px"><b>Topics in Track III</b></p>
+
+                <ul style="font-size: 15px; max-height: 60vh; overflow: auto;">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Getting Started with Large Language Models</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Build Your First LLM App - Raw and Stupid</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Techniques for Making LLMs Useful</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model & Infrastructure Ecosystem for AI</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Statistical & Mathematical Methods in ML</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Neural Nets, Deep Learning & LLM Architectures</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Understanding Tokenization & Self Attention</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Implementing Transformers from Scratch</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: Designing LLM Pipelines</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: High-Performance Training</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: Supervised Finetuning</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: Serving & Inference Optimization </li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  LLM Alignment with Reinforcement Learning</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  LLM Evaluation and Interpretability</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Introduction to LLM Operations (LLMOps)</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  <b>Capstone: Build, Align and Evaluate an LLM</b></li>
+                </ul>
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="track_4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20" style="padding: 25px;">
+                <h3 style="font-size: 30px; line-height: 1.3;">At a Glance</h3>
+                <p class="text-center" style="font-size: 18px"><b>Topics in Track IV</b></p>
+
+                <ul style="font-size: 15px; max-height: 60vh; overflow: auto;">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Getting Started with Production AI</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Techniques for Making LLMs Useful</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Model & Infrastructure Ecosystem for AI</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Understanding AI Models and Architectures</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: Designing Production AI Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Engineering: High-Performance AI Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Evaluation Techniques for AI Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AIOps: Principles & Practices (MLOps, LLMOps)</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AIOps: Orchestration and Deployment</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AIOps: Managing AI Failures & Incidents</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AIOps: Online Evaluation & A/B Testing</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Model Interpretability</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Data & Model Observability </li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Ethics, Privacy & Legal Aspects</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Security for AI Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  AI Governance: Debugging Prod AI Systems</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Technical Debt Management for AI Systems</li>
+                </ul>
+
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="perks" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3 style="font-size: 32px;">Dedicated Plan</h3><br><br>
+                <!-- <p class="text-center mt-4" style="font-size: 18px">Modules in<span class="price color-popup"> PART I: DATA SCIENCE FOUNDATIONS</span></p> -->
+
+                <ul style="font-size: 16px; line-height: 1.2;">
+                    <li><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Enroll in up to 2 tracks at a discounted price</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Full access to live sessions + dedicated learning support</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Lifetime access to program codebase & session recordings</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Full access to curated complementary learning resources, such as e-books, tutorial notebooks, etc</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Full access to cloud and compute resources for learning and projects</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  2 months of dedicated post-learning and project support</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Participation in Demo Day to pitch your project</li>
+                    <li><br><i class="fa fa-check-circle" style="color: #5142FC; padding-right: 3px;" aria-hidden="true"></i>  Certificate of completion at the end of the program</li>
+                </ul>
+
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Sign up now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade popup" id="readmore-item-1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body space-y-20 pd-40">
+                <h3 style="font-size: 28px;">Akolade Hamzat</h3>
+                <p class="mt-3 text-center">AI/ML ENGINEER</p>
+                <p style="text-align: left; font-size: 15px; line-height: 1.5;"><i class="fad fa-quote-left" style="color: var(--color-1); font-size: 25px;"></i>
+                    <span class="short-text">
+                        The experience from AISOC directly contributed to landing my first full-time international role as a Senior ML/AI Engineer. 
+                        I joined AISOC at a time when I was seriously considering leaving Data Science for Mobile Development, but everything changed during the program. 
+                        The depth of expertise from the speakers and clarity with which they taught reignited my passion for Al and helped me rediscover my path.
+                        <br><br>
+                        I connected deeply with a few members of the faculty and maintained those relationships beyond the program. With the guidance of David Okpare, I 
+                        built my first Agentic Al system, and ever since I have grown more confident in managing end-to-end AI projects. I also aced several interviews and 
+                        landed my current role shortly after. AISOC didn't just sharpen my skills. It clarified my direction and unlocked real opportunities. 
+                        I'm grateful to the AISOC team for creating a program that truly delivers.
+                    </span>
+                </p>
+
+                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#popup_apply_now" data-dismiss="modal" aria-label="Close">Sign up now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/plugin.js"></script>
+<script src="assets/js/count-down.js"></script>
+<script src="assets/js/shortcodes.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+<!-- Linkedin -->
+<script type="text/javascript">
+    _linkedin_partner_id = "8543945";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+    (function (l) {
+        if (!l) {
+            window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+            window.lintrk.q = []
+        }
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+    })(window.lintrk);
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=8543945&fmt=gif" />
+</noscript>
+
+<!-- Meta -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '364873392161277');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=364873392161277&ev=PageView&noscript=1"/>
+</noscript>
+
+</body>
+
+</html>
