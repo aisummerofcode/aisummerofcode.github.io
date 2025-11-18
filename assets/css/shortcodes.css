@@ -1310,6 +1310,7 @@ blockquote .author::before {
 .sc-product-item .product-content .product-author .infor .author-name a {
     color         : var(--color-8);
     font-weight   : 700;
+    font-size  : 17px;
     letter-spacing: -0.5px;
 }
 
@@ -1320,7 +1321,7 @@ blockquote .author::before {
 .sc-product-item .product-content .product-author .infor span {
     color      : var(--color-9);
     font-weight: 500;
-    font-size  : 13px;
+    font-size  : 14px;
 }
 
 .sc-product-item .product-content .product-price .title {
@@ -2302,22 +2303,22 @@ blockquote .author::before {
     text-align: center;
 }
 .sc-contact-infor h4 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 35px;
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 }
 .sc-contact-infor .icon {
     position: relative;
     display: inline-block;
-    width: 85px;
-    height: 85px;
-    line-height: 85px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     border-radius: 50%;
     text-align: center;
     background-color: #6345ED;
     color: #fff;
-    font-size: 40px;
-    margin-bottom: 43px;
+    font-size: 25px;
+    margin-bottom: 33px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
@@ -2337,8 +2338,8 @@ blockquote .author::before {
 }
 .sc-contact-infor .infor {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 17px;
+    line-height: 22px;
 }
 .sc-contact-infor:hover .icon {
     transform: rotateY(
