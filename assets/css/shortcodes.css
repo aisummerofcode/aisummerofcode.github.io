@@ -1321,7 +1321,7 @@ blockquote .author::before {
 .sc-product-item .product-content .product-author .infor span {
     color      : var(--color-9);
     font-weight: 500;
-    font-size  : 14px;
+    font-size  : 15px;
 }
 
 .sc-product-item .product-content .product-price .title {
