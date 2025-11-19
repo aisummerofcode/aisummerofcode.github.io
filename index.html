@@ -17,6 +17,15 @@
     <link rel="shortcut icon" href="assets/images/logo/aisoc-icon-2.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/aisoc-icon-2.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      (function () {
+        var host = window.location.host.toLowerCase();
+        // Only redirect when we're on synopsis.aisummerofcode.org
+        if (host === 'synopsis.aisummerofcode.org') {
+          window.location.replace('/synopsis');
+        }
+      })();
+    </script>
 
 </head>
 
