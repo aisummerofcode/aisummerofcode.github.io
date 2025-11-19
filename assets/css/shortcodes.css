@@ -1588,12 +1588,12 @@ blockquote .author::before {
 
 .sc-product-item.style-7 .product-img {
     width        : 45%;
-    margin-right : 11%;
+    margin-right : 5%;
     margin-bottom: 0;
 }
 
 .sc-product-item.style-7 .product-content {
-    width       : 44%;
+    width       : 50%;
     padding-left: 0;
     margin-top  : 10px;
 }

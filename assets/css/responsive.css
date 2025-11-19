@@ -364,9 +364,12 @@
      .widget-post.style-2 .post-new li,
      .wg-post-comments button,
      .sc-heading.style-2 .content-left,
-     .sc-heading.style-2 .content-right,
-     .live-autions .sc-product-item.style-7 .product-img {
+     .sc-heading.style-2 .content-right {
         width: 100%;
+    }
+
+    .live-autions .sc-product-item.style-7 .product-img {
+        width: 60%;
     }
 
     .sc-heading.style-2 .content-left .inner p {
