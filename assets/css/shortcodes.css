@@ -667,6 +667,8 @@ blockquote .author::before {
 }
 
 .sc-author .card-avatar img {
+    width        : 120px;
+    height       : 120px;
     border-radius: 50%;
     overflow     : hidden;
 }

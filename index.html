@@ -11,26 +11,22 @@
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aisummerofcode.org/">
-    <meta property="og:title" content="AI Summer of Code | Incubating AI Talents">
-    <meta property="og:description" content="AISOC is the world's largest classroom for incubating AI talents – a 4‑month, hands‑on program with global experts, multiple tracks across AI engineering, ML, LLMs, and production AI.">
-    <meta property="og:image" content="https://aisummerofcode.org/assets/images/logo/aisoc-icon-2.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://aisummerofcode.org/">
-    <meta name="twitter:title" content="AI Summer of Code | Incubating AI Talents">
-    <meta name="twitter:description" content="AISOC is the world's largest classroom for incubating AI talents – a 4‑month, hands‑on program with global experts, multiple tracks across AI engineering, ML, LLMs, and production AI.">
-    <meta name="twitter:image" content="https://aisummerofcode.org/assets/images/logo/aisoc-icon-2.png">
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
     <link rel="shortcut icon" href="assets/images/logo/aisoc-icon-2.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/aisoc-icon-2.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      (function () {
+        var host = window.location.host.toLowerCase();
+        // Only redirect when we're on synopsis.aisummerofcode.org
+        if (host === 'synopsis.aisummerofcode.org') {
+          window.location.replace('/synopsis');
+        }
+      })();
+    </script>
+
 </head>
 
 <body class="body header-fixed is_dark">
@@ -427,6 +423,7 @@
 <!-- <section class="tf-best-seller"> -->
 <section class="tf-section creators-page" id="faculty" style="background: rgba(99, 69, 237, 0.07)">
     <div class="best-seller-inner">
+    <!-- <div class="container"> -->
 
         <div class="row">
             <div class="col-md-12">                
@@ -434,7 +431,7 @@
                     <h3 class="desc" style="color: var(--color-1)">Learn from a global expert lineup</h3><br>
                     <p style="font-size: 18px;">20 world-class engineers, pioneers, and AI leaders to give you only the best!</p>
                 </div>
-                <div class="swiper-container latest-coll style-2">
+                <div class="swiper-container latest-coll">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide tf-col-item">
                             <div class="slider-item">
@@ -495,7 +492,7 @@
                                     </div>
                                     <div class="card-content text-center">
                                         <h6><a>Zion Pibowei</a> </h6>
-                                        <div class="details">Head, Data Science and AI<br>Periculum</div>
+                                        <div class="details">Head, Data Science<br>Periculum</div>
                                     </div>
                                 </div>
                             </div>
@@ -523,7 +520,7 @@
                                     </div>
                                     <div class="card-content text-center">
                                         <h6><a>Ridwan Amure</a> </h6>
-                                        <div class="details">ML Researcher, COSMOS Research Center, UALR</div>
+                                        <div class="details">ML Researcher, COSMOS at UALR</div>
                                     </div>
                                 </div>
                             </div>
@@ -537,7 +534,7 @@
                                     </div>
                                     <div class="card-content text-center">
                                         <h6><a>Adebayo Oshingbesan</a> </h6>
-                                        <div class="details">ML Engineer & AI Solutions Architect, DHB-AI</div>
+                                        <div class="details">ML/AI Solutions Architect, DHB-AI</div>
                                     </div>
                                 </div>
                             </div>
@@ -560,12 +557,12 @@
                             <div class="slider-item">
                                 <div class="sc-product-item style-3 bg-color-dark">
                                     <div class="product-img text-center mg-bt-0">
-                                        <img src="assets/images/speakers/nancy-amandi.jpg" style="border-radius: 100px;" alt="Image">
-                                        <a href="https://www.linkedin.com/in/nancy-amandi" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                        <img src="assets/images/speakers/chidozie.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/chidozie-managwu" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
                                     </div>
                                     <div class="card-content text-center">
-                                        <h6><a>Nancy Amandi</a> </h6>
-                                        <div class="details">Data Engineer<br>Moniepoint</div>
+                                        <h6><a>Chidozie Managwu</a> </h6>
+                                        <div class="details">Senior ML Engineer<br>Texas A&M</div>
                                     </div>
                                 </div>
                             </div>
@@ -574,12 +571,12 @@
                             <div class="slider-item">
                                 <div class="sc-product-item style-3 bg-color-dark">
                                     <div class="product-img text-center mg-bt-0">
-                                        <img src="assets/images/speakers/chidozie.jpg" style="border-radius: 100px;" alt="Image">
-                                        <a href="https://www.linkedin.com/in/chidozie-managwu" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                        <img src="assets/images/speakers/nancy-amandi.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/nancy-amandi" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
                                     </div>
                                     <div class="card-content text-center">
-                                        <h6><a>Chidozie Managwu</a> </h6>
-                                        <div class="details">Senior ML Engineer<br>Texas A&M University</div>
+                                        <h6><a>Nancy Amandi</a> </h6>
+                                        <div class="details">Data Engineer<br>Moniepoint</div>
                                     </div>
                                 </div>
                             </div>
@@ -607,7 +604,7 @@
                                     </div>
                                     <div class="card-content text-center">
                                         <h6><a>Caleb Chinga</a> </h6>
-                                        <div class="details">Head, Digital Engineering<br>AXA Mansard</div>
+                                        <div class="details">Head, Digital<br>AXA Mansard</div>
                                     </div>
                                 </div>
                             </div>
@@ -672,6 +669,20 @@
                             <div class="slider-item">
                                 <div class="sc-product-item style-3 bg-color-dark">
                                     <div class="product-img text-center mg-bt-0">
+                                        <img src="assets/images/avatar/david-okpare.jpg" style="border-radius: 100px;" alt="Image">
+                                        <a href="https://www.linkedin.com/in/david-okpare" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
+                                    </div>
+                                    <div class="card-content text-center">
+                                        <h6><a>David Okpare</a> </h6>
+                                        <div class="details">AI Software Engineer & OSS Contibutor</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tf-col-item">
+                            <div class="slider-item">
+                                <div class="sc-product-item style-3 bg-color-dark">
+                                    <div class="product-img text-center mg-bt-0">
                                         <img src="assets/images/speakers/daniel-akhabue.jpg" style="border-radius: 100px;" alt="Image">
                                         <a href="https://www.linkedin.com/in/daniel-akhabue" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
                                     </div>
@@ -691,21 +702,7 @@
                                     </div>
                                     <div class="card-content text-center">
                                         <h6><a>Nnaemeka Obiefuna</a> </h6>
-                                        <div class="details">Data Scientist & Researcher<br>Univelcity</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide tf-col-item">
-                            <div class="slider-item">
-                                <div class="sc-product-item style-3 bg-color-dark">
-                                    <div class="product-img text-center mg-bt-0">
-                                        <img src="assets/images/avatar/david-okpare.jpg" style="border-radius: 100px;" alt="Image">
-                                        <a href="https://www.linkedin.com/in/david-okpare" target="_blank"><i class="fab fa-linkedin-in" style="bottom: 0; transform: translateY(-50%); color: #fff; background: linear-gradient(130.35deg, #DC39FC 17.35%, #6345ED 78.23%); font-size: 17px; padding: 4px; border-radius: 5px;"></i></a>
-                                    </div>
-                                    <div class="card-content text-center">
-                                        <h6><a>David Okpare</a> </h6>
-                                        <div class="details">AI Software Engineer & OSS Contibutor</div>
+                                        <div class="details">Researcher<br>ML Collective</div>
                                     </div>
                                 </div>
                             </div>
