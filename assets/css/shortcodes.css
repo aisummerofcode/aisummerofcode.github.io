@@ -3330,3 +3330,96 @@ margin-right: 22px;
     margin-top: -11px;
 }
 
+
+/* Styling for program schedule */
+
+.schedule-container {
+    position: relative;
+    padding: 10px 0;
+}
+.schedule-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color-1);
+}
+.schedule-item:last-child {
+    border-bottom: none;
+}
+.schedule-time {
+    width: 15%;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color4);
+    padding-right: 20px;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.4;
+}
+.schedule-content {
+    width: 80%;
+}
+.schedule-tag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: rgba(99, 69, 237, 0.1);
+    color: var(--primary-color5);
+    margin-bottom: 12px;
+    border: 1px solid rgba(99, 69, 237, 0.1);
+}
+.schedule-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-1);
+    line-height: 1.4;
+}
+.schedule-speaker {
+    font-size: 16px;
+    color: var(--color-2);
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.schedule-card {
+    background: var(--bg-body);
+    border: 1px solid var(--border-color-1);
+    padding: 20px;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.schedule-card:hover {
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+    border-color: var(--primary-color5);
+}
+.schedule-sub-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-1);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.schedule-list-simple {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.schedule-list-simple li {
+    position: relative;
+    padding-left: 15px;
+    color: var(--color-2);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.schedule-list-simple li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color5);
+    font-weight: bold;
+}
+        

@@ -542,6 +542,23 @@
     .wg-themesflat-pagination {
         margin-top: 50px;
     }
+    
+    /* Program Schedule */
+    .schedule-item {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .schedule-time {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+    .schedule-content {
+        width: 100%;
+    }
+    .schedule-title {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
